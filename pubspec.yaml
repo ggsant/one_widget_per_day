@@ -14,7 +14,9 @@ dependencies:
   cupertino_icons: ^1.0.0
   flutter_screenutil: ^3.2.0
   google_fonts: ^1.1.1
+  http: ^0.12.2
   material_design_icons_flutter: ^4.0.5755
+  youtube_player_flutter: ^7.0.0+7
 
 dev_dependencies:
   flutter_test:

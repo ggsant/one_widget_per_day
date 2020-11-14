@@ -1,12 +1,36 @@
 class Strings {
+  // region Login Screen
   static const String LOGIN_EMAIL = 'Login';
   static const String LOGIN_GOOGLE = 'Google';
   static const String TITLE_LOGIN_SCREEN = 'One Widget Per Day';
   static const String CREANT_AN_ACCOUNT = 'Creat an account';
   static const String RECOVER_PASSWORD = 'Recover Password';
   static const String CREATED_BY = 'Created by ggsant';
+  // endRegion
+
+  // Region outros
+  static const String VOLTAR = 'Voltar';
+  // endRegion
+
+  // Region Safe Area
+  static const String SAFE_AREA_TEXT01 =
+      'Nos dias de hoje temos diversos modelos de dispositivos e com o tamanho de telas mais variados tamanhos e formatos temos telas arredondadas, retangulares e para piorar temos telas q nem do iPhone que colocou o falante dividindo a tela. Veja abaixo:';
+  static const String SAFE_AREA_TEXT02 =
+      'E isso as vezes nos atrapalha a desenhar a tela de nosso aplicativo pois pode cortar o conteúdo do app complicando nossa vida. E para nos salvar o Flutter trouxe o SafeArea, ele usa o MediaQuery para conseguir capturar as dimensões da tela e combinar com a estrutura do nosso app, fazendo com que nenhum widget "vaze" pela tela e não apareça devido a estrutura do hardware do celular';
+  static const String SAFE_AREA_TEXT03 =
+      'Para utilizá-lo vamos pegar como exemplo o código abaixo';
+  static const String SAFE_AREA_TEXT04 =
+      'Veja o video abaixo do canal oficial do flutter no youtube:';
+
+  // endRegion
+
+  // region links dos videos
+  static const String LINK_SAFE_AREA =
+      'https://www.youtube.com/watch?v=lkF0TQJO0bA&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=2&ab_channel=GoogleDevelopers';
+
+  // Region Titles & Catalog
   static const String WIDGETS = 'Widgets';
-  static const String CATALOG_SAFE_AREA = '';
+  static const String CATALOG_SAFE_AREA = 'Safe Area';
   static const String CATALOG_EXPANDED = '';
   static const String CATALOG_WRAP = '';
   static const String CATALOG_ANIMATED_CONTAINER = '';

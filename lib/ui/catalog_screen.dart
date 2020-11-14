@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:one_widget_per_day/resources/strings.dart';
 import 'package:one_widget_per_day/ui/widgets/button_catalog.dart';
-import 'package:one_widget_per_day/ui/widgets/button_login.dart';
 import 'package:one_widget_per_day/ui/widgets/title.dart';
+import 'package:one_widget_per_day/utils/routes.dart';
 
 class CatalogScreen extends StatefulWidget {
   @override
@@ -26,8 +25,10 @@ class _CatalogScreenState extends State<CatalogScreen> {
                   text: Strings.WIDGETS,
                 ),
                 ButtonCatalog(
-                  text: Strings.LOGIN_GOOGLE,
-                  onPressed: () {},
+                  text: Strings.CATALOG_SAFE_AREA,
+                  onPressed: () {
+                    Navigator.pushNamed(context, SafeAreaScreenRoute);
+                  },
                 ),
               ],
             ),
