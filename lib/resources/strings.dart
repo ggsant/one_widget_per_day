@@ -13,6 +13,7 @@ class Strings {
   // endRegion
 
   // Region Safe Area
+  static const String CATALOG_SAFE_AREA = 'Safe Area';
   static const String SAFE_AREA_TEXT01 =
       'Nos dias de hoje temos diversos modelos de dispositivos e com o tamanho de telas mais variados tamanhos e formatos temos telas arredondadas, retangulares e para piorar temos telas q nem do iPhone que colocou o falante dividindo a tela. Veja abaixo:';
   static const String SAFE_AREA_TEXT02 =
@@ -21,17 +22,53 @@ class Strings {
       'Para utilizá-lo vamos pegar como exemplo o código abaixo';
   static const String SAFE_AREA_TEXT04 =
       'Veja o video abaixo do canal oficial do flutter no youtube:';
-
-  // endRegion
-
-  // region links dos videos
   static const String LINK_SAFE_AREA =
       'https://www.youtube.com/watch?v=lkF0TQJO0bA&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=2&ab_channel=GoogleDevelopers';
 
+  // endRegion
+
+// Region
+  static const String CATALOG_EXPANDED = 'Expanded';
+  static const String EXPANDED_TEXT01 =
+      'Esse widget é usado para organizar o espaço ocupado por itens em Rows, Columns e Flex. Ele faz com que esse item ocupe o espaço vago dentro do seu pai Quando a renderização acontece, primeiro é construido os filhos que não são flexiveis e depois os que são flexíveis vão ser calculados com o espaço restante. Você pode pensar como se fosse um display flex no CSS, onde essa caixa vai se expandir ocupando o todo espaço restate ou então em uma proporção indicada. Como um exemplo de uso temos o código:';
+  static const String EXPANDED_TEXT02 =
+      'Quando não colocamos o indicar do tamanho ocupado pelo retangulos azul e rosa eles se organizaram baseado nas regras de expanded. Mas e se quisermos que um seja de um tamanho diferente do outro basta usar o atributo de flex e indicar a proporção de espaço a ser ocupado:';
+  static const String EXPANDED_TEXT03 =
+      'Você pode ver que sem indicar o tamanho ocupado pelo retangulos azul e rosa eles se organizaram baseado nas regras de expanded. Mas e se eu quiser que um seja de um tamanho diferente do outro? É so usar o atributo de flex e indicar a proporção de espaço a ser ocupado:';
+  static const String EXPANDED_TEXT04 = 'Assim obtemos o seginte resultado';
+  static const String LINK_EXPANDED =
+      'https://www.youtube.com/watch?v=_rnZaagadyo&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=3&ab_channel=GoogleDevelopers';
+// endRegion
+
+// Region
+// endRegion
+
+// Region
+// endRegion
+
+// Region
+// endRegion
+
+// Region
+// endRegion
+
+// Region
+// endRegion
+
+// Region
+// endRegion
+
+// Region
+// endRegion
+
+// Region
+// endRegion
+
+// Region
+// endRegion
+
   // Region Titles & Catalog
   static const String WIDGETS = 'Widgets';
-  static const String CATALOG_SAFE_AREA = 'Safe Area';
-  static const String CATALOG_EXPANDED = '';
   static const String CATALOG_WRAP = '';
   static const String CATALOG_ANIMATED_CONTAINER = '';
   static const String CATALOG_OPACITY = '';

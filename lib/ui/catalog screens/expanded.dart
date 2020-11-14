@@ -7,14 +7,15 @@ import 'package:one_widget_per_day/ui/widgets/title.dart';
 import 'package:one_widget_per_day/utils/routes.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class SafeAreaScreen extends StatefulWidget {
+class ExpandedScreen extends StatefulWidget {
   @override
-  _SafeAreaScreenState createState() => _SafeAreaScreenState();
+  _ExpandedScreenState createState() => _ExpandedScreenState();
 }
 
-class _SafeAreaScreenState extends State<SafeAreaScreen> {
-  String videoURL = Strings.LINK_SAFE_AREA;
+class _ExpandedScreenState extends State<ExpandedScreen> {
+  String videoURL = Strings.LINK_EXPANDED;
   YoutubePlayerController _controller;
+
   @override
   void initState() {
     _controller = YoutubePlayerController(
@@ -41,20 +42,22 @@ class _SafeAreaScreenState extends State<SafeAreaScreen> {
                       SizedBox(width: 30),
                       TitleFont(
                         fontSize: 50,
-                        text: Strings.CATALOG_SAFE_AREA,
+                        text: Strings.CATALOG_EXPANDED,
                       ),
                     ],
                   ),
-                  CustomText(text: Strings.SAFE_AREA_TEXT01),
-                  CustomText(text: Strings.SAFE_AREA_TEXT02),
-                  CustomText(text: Strings.SAFE_AREA_TEXT03),
-                  SizedBox(height: 30),
+                  CustomText(text: Strings.EXPANDED_TEXT01),
                   Image.asset(
-                    'assets/safearea.png',
+                    'assets/expanded.png',
                     height: 300,
                   ),
+                  CustomText(text: Strings.EXPANDED_TEXT02),
+                  Image.asset(
+                    'assets/expanded02.png',
+                    height: 300,
+                  ),
+                  CustomText(text: Strings.EXPANDED_TEXT03),
                   SizedBox(height: 30),
-                  CustomText(text: Strings.SAFE_AREA_TEXT04),
                   SizedBox(height: 30),
                   YoutubePlayer(
                     controller: _controller,

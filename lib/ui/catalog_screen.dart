@@ -30,6 +30,12 @@ class _CatalogScreenState extends State<CatalogScreen> {
                     Navigator.pushNamed(context, SafeAreaScreenRoute);
                   },
                 ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_EXPANDED,
+                  onPressed: () {
+                    Navigator.pushNamed(context, ExpandedScreenRoute);
+                  },
+                ),
               ],
             ),
           ),
