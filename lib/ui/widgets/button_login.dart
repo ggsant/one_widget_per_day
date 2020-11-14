@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Button extends StatelessWidget {
-  Button({
+class ButtonLogin extends StatelessWidget {
+  ButtonLogin({
     this.width,
     this.text,
     this.icon,

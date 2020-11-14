@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:one_widget_per_day/resources/strings.dart';
-import 'package:one_widget_per_day/ui/widgets/button.dart';
+import 'package:one_widget_per_day/ui/widgets/button_login.dart';
+import 'package:one_widget_per_day/ui/widgets/custom_text.dart';
+import 'package:one_widget_per_day/ui/widgets/title.dart';
+import 'package:one_widget_per_day/utils/routes.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);
@@ -19,34 +21,45 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            SizedBox(height: 20),
-            Text(
-              'One Widget Per Day',
-              style: GoogleFonts.shadowsIntoLight(
-                textStyle: TextStyle(
-                  color: Colors.purple[300],
-                  fontWeight: FontWeight.w700,
-                  fontSize: 40.0,
-                ),
-              ),
-              textAlign: TextAlign.center,
+            SizedBox(height: 30),
+            TitleFont(
+              fontSize: 40,
+              text: Strings.TITLE_LOGIN_SCREEN,
             ),
             Image.asset(
               'assets/logo.png',
               height: 300,
             ),
-            Button(
+            ButtonLogin(
               width: 300,
               text: Strings.LOGIN_EMAIL,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, CatalogScreenRoute);
+              },
               icon: Icons.email,
             ),
-            Button(
+            SizedBox(height: 20),
+            ButtonLogin(
               width: 300,
               text: Strings.LOGIN_GOOGLE,
               onPressed: () {},
               icon: MdiIcons.google,
-            )
+            ),
+            SizedBox(height: 20),
+            CustomText(
+              text: Strings.CREANT_AN_ACCOUNT,
+              fontSize: 18,
+            ),
+            SizedBox(height: 5),
+            CustomText(
+              text: Strings.RECOVER_PASSWORD,
+              fontSize: 18,
+            ),
+            SizedBox(height: 60),
+            CustomText(
+              text: Strings.CREATED_BY,
+              fontSize: 10,
+            ),
           ],
         ),
       ),
