@@ -14,6 +14,7 @@ dependencies:
   cupertino_icons: ^1.0.0
   flutter_screenutil: ^3.2.0
   google_fonts: ^1.1.1
+  material_design_icons_flutter: ^4.0.5755
 
 dev_dependencies:
   flutter_test:
@@ -22,8 +23,8 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
