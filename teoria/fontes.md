@@ -63,3 +63,4 @@ O código acima irá renderizar um widget Text(), já com a fonte Montserrat.
 **LINKS**
 
 [use a custom Font](https://flutter.dev/docs/cookbook/design/fonts)
+[package - google-fonts](https://pub.dev/packages/google_fonts)
