@@ -56,8 +56,7 @@ class _ExpandedScreenState extends State<ExpandedScreen> {
                     'assets/expanded02.png',
                     height: 300,
                   ),
-                  CustomText(text: Strings.EXPANDED_TEXT03),
-                  SizedBox(height: 30),
+                  CustomText(text: Strings.VIDEO),
                   SizedBox(height: 30),
                   YoutubePlayer(
                     controller: _controller,

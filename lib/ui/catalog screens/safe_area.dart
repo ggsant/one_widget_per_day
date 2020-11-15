@@ -54,7 +54,7 @@ class _SafeAreaScreenState extends State<SafeAreaScreen> {
                     height: 300,
                   ),
                   SizedBox(height: 30),
-                  CustomText(text: Strings.SAFE_AREA_TEXT04),
+                  CustomText(text: Strings.VIDEO),
                   SizedBox(height: 30),
                   YoutubePlayer(
                     controller: _controller,
