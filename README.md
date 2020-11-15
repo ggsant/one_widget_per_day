@@ -1,6 +1,7 @@
-# one_widget_per_day
+# One Widget Per Day
+![WhatsApp Image 2020-11-14 at 21 02 18](https://user-images.githubusercontent.com/61892998/99194087-223f9980-275c-11eb-90a1-8f9f1fbcbd01.jpeg)
 
-A new Flutter project.
+ A proposta do OneWidgetPerDay é a de estudar um widget por dia e aplica-los na prática. Primeiro estou implementando toda a UI que eu quero seguir, assim como os conteúdos que eu vou disponibilizar (texto e vídeo). O logo do Flutter é um beija-flor, então decidi dar uma pitada brasileira no logo do meu app colocando uma Arara.
 
 ## Getting Started
 
