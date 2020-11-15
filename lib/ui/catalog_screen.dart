@@ -36,6 +36,30 @@ class _CatalogScreenState extends State<CatalogScreen> {
                     Navigator.pushNamed(context, ExpandedScreenRoute);
                   },
                 ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_WRAP,
+                  onPressed: () {
+                    Navigator.pushNamed(context, WrapScreenRoute);
+                  },
+                ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_ANIMATED_CONTAINER,
+                  onPressed: () {
+                    Navigator.pushNamed(context, AnimatedContainerScreenRoute);
+                  },
+                ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_OPACITY,
+                  onPressed: () {
+                    Navigator.pushNamed(context, OpacityScreenRoute);
+                  },
+                ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_FUTURE_BUILDER,
+                  onPressed: () {
+                    Navigator.pushNamed(context, FutureBuilderScreenRoute);
+                  },
+                ),
               ],
             ),
           ),
