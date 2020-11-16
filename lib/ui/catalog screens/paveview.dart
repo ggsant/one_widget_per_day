@@ -13,7 +13,7 @@ class PageViewScreen extends StatefulWidget {
 }
 
 class _PageViewScreenState extends State<PageViewScreen> {
-  String videoURL = Strings.LINK_FLOATING_ACTION_BUTTON;
+  String videoURL = Strings.LINK_PAGE_VIEW;
   YoutubePlayerController _controller;
 
   @override

@@ -8,6 +8,7 @@ import 'package:one_widget_per_day/ui/catalog%20screens/futurebuilder.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/opacity.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/paveview.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/safe_area.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/table.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/wrap.dart';
 import 'package:one_widget_per_day/ui/catalog_screen.dart';
 import 'package:one_widget_per_day/ui/home_screen.dart';
@@ -139,6 +140,9 @@ RouteFactory routes() {
         break;
       case PageviewScreenRoute:
         screen = PageViewScreen();
+        break;
+      case TableScreenRoute:
+        screen = TableScreen();
         break;
       default:
         screen = HomeScreen();

@@ -79,6 +79,12 @@ class _CatalogScreenState extends State<CatalogScreen> {
                     Navigator.pushNamed(context, PageviewScreenRoute);
                   },
                 ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_TABLE,
+                  onPressed: () {
+                    Navigator.pushNamed(context, TableScreenRoute);
+                  },
+                ),
               ],
             ),
           ),

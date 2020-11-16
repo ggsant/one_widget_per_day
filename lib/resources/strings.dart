@@ -157,6 +157,18 @@ class Strings {
 
 // Region
   static const String CATALOG_TABLE = 'Table';
+  static const String TABLE_TEXT01 =
+      'Um widget que usa o algoritmo de layout de tabela para seus filhos.';
+  static const String TABLE_TEXT02 =
+      'Se você tiver apenas uma linha, o widget de Row é mais apropriado. Se você tiver apenas uma coluna, os widgets SliverList ou Column serão mais apropriados.';
+  static const String TABLE_TEXT03 =
+      'Tamanho das linhas verticalmente com base em seu conteúdo. Para controlar as larguras das colunas individuais, use a propriedade columnWidths para especificar uma TableColumnWidth para cada coluna. Se columnWidths for nulo, ou houver uma entrada nula para uma determinada coluna em columnWidths , a tabela usará defaultColumnWidth em seu lugar';
+  static const String TABLE_TEXT04 =
+      'Por padrão, defaultColumnWidth é FlexColumnWidth . Este TableColumnWidth divide o espaço restante no eixo horizontal para determinar a largura da coluna. Se envolver uma Tabela em um ScrollView horizontal , escolha uma TableColumnWidth diferente , como FixedColumnWidth .';
+  static const String TABLE_TEXT05 = 'Veja um Exemplo:';
+  static const String LINK_TABLE =
+      'https://www.youtube.com/watch?v=_lbE0wsVZSw&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=11&ab_channel=GoogleDevelopers';
+
 // endRegion
 
 // Region
