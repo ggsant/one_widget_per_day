@@ -58,7 +58,7 @@ class _TableScreenState extends State<TableScreen> {
                   CustomText(text: Strings.TABLE_TEXT05),
                   SizedBox(height: 10),
                   Image.asset(
-                    'assets/table.png',
+                    'assets/sliverappbar.png',
                     height: 300,
                   ),
                   SizedBox(height: 20),

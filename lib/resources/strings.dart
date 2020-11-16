@@ -173,6 +173,20 @@ class Strings {
 
 // Region
   static const String CATALOG_SLIVER_APP_BAR = 'Sliver AppBar';
+  static const String CATALOG_SLIVER_APP_BAR1 = 'Sliver';
+  static const String CATALOG_SLIVER_APP_BAR2 = 'AppBar';
+
+  static const String SLIVER_APP_BAR_TEXT01 =
+      'Uma barra de aplicativos de material design que se integra a um CustomScrollView .';
+  static const String SLIVER_APP_BAR_TEXT02 =
+      'Uma barra de aplicativos consiste em uma barra de ferramentas e potencialmente outros widgets, como TabBar e FlexibleSpaceBar . Barras de aplicativos normalmente expõem uma ou mais ações comuns com IconButton s que são opcionalmente seguidos por um PopupMenuButton para operações menos comuns.';
+  static const String SLIVER_APP_BAR_TEXT03 =
+      'As barras do aplicativo Sliver são normalmente usadas como o primeiro filho de CustomScrollView , o que permite que a barra do aplicativo se integre à visualização de rolagem para que possa variar em altura de acordo com o deslocamento da rolagem ou flutuar acima do outro conteúdo na visualização de rolagem. Para obter uma barra de aplicativos de altura fixa na parte superior da tela, consulte AppBar , que é usado no slot Scaffold.appBar .';
+  static const String SLIVER_APP_BAR_TEXT04 =
+      'O AppBar exibe os widgets da barra de ferramentas, guia , título e ações , acima da parte inferior (se houver). Se um widget FlexibleSpace for especificado, ele será empilhado atrás da barra de ferramentas e do widget inferior.';
+  static const String SLIVER_APP_BAR_TEXT05 = 'Veja o código de exemplo:';
+  static const String LINK_SLIVER_APP_BAR =
+      'https://www.youtube.com/watch?v=R9C5KMJKluE&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=12&ab_channel=GoogleDevelopers';
 // endRegion
 
 // Region

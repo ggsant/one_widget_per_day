@@ -85,6 +85,12 @@ class _CatalogScreenState extends State<CatalogScreen> {
                     Navigator.pushNamed(context, TableScreenRoute);
                   },
                 ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_SLIVER_APP_BAR,
+                  onPressed: () {
+                    Navigator.pushNamed(context, SliverAppBarScreenRoute);
+                  },
+                ),
               ],
             ),
           ),
