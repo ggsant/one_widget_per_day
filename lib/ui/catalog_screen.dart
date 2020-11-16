@@ -60,6 +60,25 @@ class _CatalogScreenState extends State<CatalogScreen> {
                     Navigator.pushNamed(context, FutureBuilderScreenRoute);
                   },
                 ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_FADE_TRANSITION,
+                  onPressed: () {
+                    Navigator.pushNamed(context, FadeTransitionScreenRoute);
+                  },
+                ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_FLOATING_ACTION_BUTTON,
+                  onPressed: () {
+                    Navigator.pushNamed(
+                        context, FloatingActionButtonScreenRoute);
+                  },
+                ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_PAGE_VIEW,
+                  onPressed: () {
+                    Navigator.pushNamed(context, PageviewScreenRoute);
+                  },
+                ),
               ],
             ),
           ),

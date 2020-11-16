@@ -2,8 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/animatedContainer.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/expanded.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/fadetransition.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/floatingActionButton.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/futurebuilder.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/opacity.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/paveview.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/safe_area.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/wrap.dart';
 import 'package:one_widget_per_day/ui/catalog_screen.dart';
@@ -127,6 +130,15 @@ RouteFactory routes() {
         break;
       case FutureBuilderScreenRoute:
         screen = FutureBuilderScreen();
+        break;
+      case FadeTransitionScreenRoute:
+        screen = FadeTransitionScreen();
+        break;
+      case FloatingActionButtonScreenRoute:
+        screen = FloatingActionButtonScreen();
+        break;
+      case PageviewScreenRoute:
+        screen = PageViewScreen();
         break;
       default:
         screen = HomeScreen();

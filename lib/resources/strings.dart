@@ -31,7 +31,7 @@ class Strings {
   // Region Expanded
   static const String CATALOG_EXPANDED = 'Expanded';
   static const String EXPANDED_TEXT01 =
-      'Esse widget é usado para organizar o espaço ocupado por itens em Rows, Columns e Flex. Ele faz com que esse item ocupe o espaço vago dentro do seu pai Quando a renderização acontece, primeiro é construido os filhos que não são flexiveis e depois os que são flexíveis vão ser calculados com o espaço restante. Você pode pensar como se fosse um display flex no CSS, onde essa caixa vai se expandir ocupando o todo espaço restate ou então em uma proporção indicada. Como um exemplo de uso temos o código:';
+      'Esse widget é usado para organizar o espaço ocupado por itens em Rows, Columns e Flex. Ele faz com que esse item ocupe o espaço vago dentro do seu pai Quando a renderização acontece, primeiro é construido os childrens que não são flexiveis e depois os que são flexíveis vão ser calculados com o espaço restante. Você pode pensar como se fosse um display flex no CSS, onde essa caixa vai se expandir ocupando o todo espaço restate ou então em uma proporção indicada. Como um exemplo de uso temos o código:';
   static const String EXPANDED_TEXT02 =
       'Quando não indicamo o tamanho ocupado pelo retangulos eles se organizaram baseados nas regras de expanded. Mas e se quisermos que um seja de um tamanho diferente do outro basta usar o atributo de flex e indicar a proporção de espaço a ser ocupado. Veja:';
   static const String LINK_EXPANDED =
@@ -64,7 +64,7 @@ class Strings {
 // Region
   static const String CATALOG_OPACITY = 'Opacity';
   static const String OPACITY_TEXT01 =
-      'Um widget que torna seu filho parcialmente transparente.';
+      'Um widget que torna seu child parcialmente transparente.';
   static const String OPACITY_TEXT02 =
       'Uma opacidade de 0.0significa que não há opacidade, ou seja, é totalmente transparente. Se você quiser torná-lo totalmente opaco (ou seja, sem transparência), defina a opacidade como 1.0. Qualquer coisa entre 0.0e 1.0torna o widget parcialmente transparente.';
   static const String OPACITY_TEXT03 =
@@ -97,14 +97,62 @@ class Strings {
 
 // Region
   static const String CATALOG_FADE_TRANSITION = 'Fade transition';
+  static const String CATALOG_FADE_TRANSITION1 = 'Fade';
+  static const String CATALOG_FADE_TRANSITION2 = 'Transition';
+
+  static const String FADE_TRANSITION_TEXT01 =
+      'FadeTransition é um widget que anima a opacidade de um widget child. Com este widget, você pode criar uma animação de esmaecimento para mostrar ou ocultar um widget. Abaixo estão alguns exemplos de como usá-lo.';
+  static const String FADE_TRANSITION_TEXT02 =
+      'Para este tipo de transição, o que você precisa passar é um Animation<double> que defina a animação a ser aplicada ao widget child. A criação de um Animation requer que você crie um AnimationController. Primeiro, você precisa estender sua classe State com TickerProviderStateMixin. Isso permite que você passe this como o vsync argumento no construtor de AnimationController.';
+  static const String FADE_TRANSITION_TEXT03 =
+      'No controlador, você pode controlar a opacidade do widget, definindo os valores para lowerBound, upperBound, e value. lowerBound é o menor valor para a animação em que esta animação é considerada descartada, o padrão é 0,0. upperBound é o maior valor para a animação em que esta animação é considerada concluída, o padrão é 1,0. value é o valor inicial da animação, o padrão é lowerBound. Para transição de esmaecimento, um valor de 0,0 significa que a opacidade é 0%, condição em que o widget é invisível. Um valor de 1,0 significa que a opacidade é 100%. Para definir por quanto tempo a animação deve ser reproduzida, você pode passar uma Duration instância como duration argumento.';
+  static const String FADE_TRANSITION_TEXT04 =
+      'Depois disso, você pode criar a Animation instância. Outra coisa que você precisa fazer é adicionar um código para descartar o controlador dentro dele dispose()';
+  static const String FADE_TRANSITION_TEXT05 = 'FadeTransition Propriedades';
+  static const String FADE_TRANSITION_TEXT06 =
+      ' * Key key: A chave do widget, usada para controlar se ele deve ser substituído. \n * Animation<double> opacity *: A animação que controla a transição de fade da criança. \n * bool alwaysIncludeSemantics: Se a informação semântica dos childrens está sempre incluída. O padrão é false. \n * Widget child: O widget sob este widget na árvore onde a animação será aplicada.';
+  static const String FADE_TRANSITION_TEXT07 = '';
+  static const String LINK_FADE_TRANSITION =
+      'https://www.youtube.com/watch?v=rLwWVbv3xDQ&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=8&t=3s&ab_channel=GoogleDevelopers';
+
 // endRegion
 
 // Region
   static const String CATALOG_FLOATING_ACTION_BUTTON = 'Floating action button';
+  static const String CATALOG_FLOATING_ACTION_BUTTON1 = 'Floating';
+  static const String CATALOG_FLOATING_ACTION_BUTTON2 = 'Action Button';
+  static const String FLOATING_ACTION_BUTTON_TEXT01 =
+      'Um FloatingActionButton no material design é um botão em uma tela que está vinculado a uma ação óbvia que um usuário normalmente faria naquela tela específica. Este botão flutua acima do conteúdo da tela e geralmente reside em um canto da tela.';
+  static const String FLOATING_ACTION_BUTTON_TEXT02 =
+      'O Flutter oferece dois tipos de FloatingActionButtons prontos para uso. \n 1 - FloatingActionButton. \n 2 - FloatingActionButton.extended';
+  static const String FLOATING_ACTION_BUTTON_TEXT03 =
+      '1. FloatingActionButton - O construtor padrão cria um FAB circular simples com um widget child dentro dele. É necessário um método onPressed para reagir a toques e um child (não obrigatório) para exibir um widget dentro do FAB.';
+  static const String FLOATING_ACTION_BUTTON_TEXT04 =
+      'O código é relativamente simples e geralmente usado com o parâmetro floatingActionButton do widget Scaffold.';
+  static const String FLOATING_ACTION_BUTTON_TEXT05 =
+      '2. FloatingActionButton.extended FloatingActionButton.extended oferece um amplo FAB, geralmente com um ícone e um rótulo dentro dele.';
+  static const String FLOATING_ACTION_BUTTON_TEXT06 =
+      'Em vez de um parâmetro child, agora temos parâmetros de label e icon .';
+  static const String LINK_FLOATING_ACTION_BUTTON =
+      'https://www.youtube.com/watch?v=2uaoEDOgk_I&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=9&ab_channel=GoogleDevelopers';
+
 // endRegion
 
 // Region
   static const String CATALOG_PAGE_VIEW = 'Pageview';
+  static const String PAGE_VIEW_TEXT01 =
+      'A PageView é um widget que gera páginas roláveis na tela. Pode ser uma lista fixa de páginas ou uma função de construtor que constrói páginas repetidas. PageViewage de forma semelhante a a ListView no sentido de construir elementos.';
+  static const String PAGE_VIEW_TEXT02 =
+      'Existem 3 tipos de PageViews: \n\n 1.PageView - Permite criar PageViews simples usando o construtor padrão; \n\n2.PageView.builder - Permite criar PageViews dinâmicas; \n\n3.PageView.custom -  Permite criar ações e/ou animações personalizadas de rolagem;';
+  static const String PAGE_VIEW_TEXT03 =
+      'PageView (construtor padrão) - Esse tipo pega uma lista fixa de filhos (páginas) e os torna roláveis .';
+  static const String PAGE_VIEW_TEXT04 =
+      'PageView.builder - Este construtor assume uma itemBuilderfunção e um itemCountsemelhante aListView.builder';
+  static const String PAGE_VIEW_TEXT05 =
+      'Como um ListView.builder, isso cria crianças sob demanda. Se o itemCountfor definido como nulo (não definido), uma lista infinita de páginas pode ser gerada. Por exemplo, o código abaixo que fornece uma lista infinita de páginas com cores alternadas de rosa e ciano.';
+  static const String LINK_PAGE_VIEW =
+      'https://www.youtube.com/watch?v=J1gE9xvph-A&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=10&ab_channel=GoogleDevelopers';
+
 // endRegion
 
 // Region
