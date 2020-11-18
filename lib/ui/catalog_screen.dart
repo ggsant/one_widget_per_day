@@ -91,6 +91,60 @@ class _CatalogScreenState extends State<CatalogScreen> {
                     Navigator.pushNamed(context, SliverAppBarScreenRoute);
                   },
                 ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_SLIVER,
+                  onPressed: () {
+                    Navigator.pushNamed(context, SliverScreenRoute);
+                  },
+                ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_FADE_IN_IMAGE,
+                  onPressed: () {
+                    Navigator.pushNamed(context, SliverScreenRoute);
+                  },
+                ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_STREAM_BUILDER,
+                  onPressed: () {
+                    Navigator.pushNamed(context, SliverScreenRoute);
+                  },
+                ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_INHERITED_MODEL,
+                  onPressed: () {
+                    Navigator.pushNamed(context, SliverScreenRoute);
+                  },
+                ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_CLIP_REACT,
+                  onPressed: () {
+                    Navigator.pushNamed(context, SliverScreenRoute);
+                  },
+                ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_HERO,
+                  onPressed: () {
+                    Navigator.pushNamed(context, SliverScreenRoute);
+                  },
+                ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_CUSTOM_PAINT,
+                  onPressed: () {
+                    Navigator.pushNamed(context, SliverScreenRoute);
+                  },
+                ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_TOOLTIP,
+                  onPressed: () {
+                    Navigator.pushNamed(context, SliverScreenRoute);
+                  },
+                ),
+                ButtonCatalog(
+                  text: Strings.CATALOG_FITTED_BOX,
+                  onPressed: () {
+                    Navigator.pushNamed(context, SliverScreenRoute);
+                  },
+                ),
               ],
             ),
           ),

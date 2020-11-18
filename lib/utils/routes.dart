@@ -1,15 +1,23 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/animatedContainer.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/cliprrect.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/custompaint.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/expanded.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/fadeinimage.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/fadetransition.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/fittedbox.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/floatingActionButton.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/futurebuilder.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/hero.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/inheritedmodel.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/opacity.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/paveview.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/safe_area.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/sliverappbar.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/streambuilder.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/table.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/tooltip.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/wrap.dart';
 import 'package:one_widget_per_day/ui/catalog_screen.dart';
 import 'package:one_widget_per_day/ui/home_screen.dart';
@@ -30,12 +38,12 @@ const String PageviewScreenRoute = '/pageviewRoute';
 const String TableScreenRoute = '/tableRoute';
 const String SliverAppBarScreenRoute = '/sliverAppBarRoute';
 const String WigetsScreenRoute = '/widgetsRoute';
-const String SliverListScreenRoute = '/sliverListRoute';
+const String SliverScreenRoute = '/sliverRoute';
 const String SliverGridScreenRoute = '/sliverGridRoute';
 const String FadeInImageScreenRoute = '/fadeInImageRoute';
 const String StreamBuilderScreenRoute = '/streamBuilderRoute';
 const String InheritedModelScreenRoute = '/inheritedModelRoute';
-const String ClipReactScreenRoute = '/clipReactRoute';
+const String ClipRRectScreenRoute = '/clipReactRoute';
 const String HeroScreenRoute = '/heroRoute';
 const String CustomPaintScreenRoute = '/customPaintRoute';
 const String TooltipScreenRoute = '/tooltipRoute';
@@ -147,6 +155,30 @@ RouteFactory routes() {
         break;
       case SliverAppBarScreenRoute:
         screen = SliverAppBarScreen();
+        break;
+      case FadeInImageScreenRoute:
+        screen = FadeInImageScreen();
+        break;
+      case StreamBuilderScreenRoute:
+        screen = StreamBuilderScreen();
+        break;
+      case InheritedModelScreenRoute:
+        screen = InheritedModelScreen();
+        break;
+      case ClipRRectScreenRoute:
+        screen = ClipRRectScreen();
+        break;
+      case HeroScreenRoute:
+        screen = HeroScreen();
+        break;
+      case CustomPaintScreenRoute:
+        screen = CustomPaintScreen();
+        break;
+      case TooltipScreenRoute:
+        screen = TooltipScreen();
+        break;
+      case FittedBoxScreenRoute:
+        screen = FittedBoxScreen();
         break;
       default:
         screen = HomeScreen();

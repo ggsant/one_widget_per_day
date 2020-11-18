@@ -5,7 +5,6 @@ import 'package:one_widget_per_day/ui/widgets/come_back_button.dart';
 import 'package:one_widget_per_day/ui/widgets/custom_text.dart';
 import 'package:one_widget_per_day/ui/widgets/title.dart';
 import 'package:one_widget_per_day/utils/routes.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class TableScreen extends StatefulWidget {
   @override
@@ -13,17 +12,6 @@ class TableScreen extends StatefulWidget {
 }
 
 class _TableScreenState extends State<TableScreen> {
-  String videoURL = Strings.LINK_TABLE;
-  YoutubePlayerController _controller;
-
-  @override
-  void initState() {
-    _controller = YoutubePlayerController(
-        initialVideoId: YoutubePlayer.convertUrlToId(videoURL));
-
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -55,19 +43,7 @@ class _TableScreenState extends State<TableScreen> {
                   SizedBox(height: 10),
                   CustomText(text: Strings.TABLE_TEXT04),
                   SizedBox(height: 10),
-                  CustomText(text: Strings.TABLE_TEXT05),
-                  SizedBox(height: 10),
-                  Image.asset(
-                    'assets/sliverappbar.png',
-                    height: 300,
-                  ),
-                  SizedBox(height: 20),
                   CustomText(text: Strings.VIDEO),
-                  SizedBox(height: 30),
-                  YoutubePlayer(
-                    controller: _controller,
-                    showVideoProgressIndicator: true,
-                  ),
                   SizedBox(height: 20),
                   ButtonCatalog(
                     text: Strings.VOLTAR,

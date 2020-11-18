@@ -19,33 +19,28 @@ class Strings {
   // Region Safe Area
   static const String CATALOG_SAFE_AREA = 'Safe Area';
   static const String SAFE_AREA_TEXT01 =
-      'Nos dias de hoje temos diversos modelos de dispositivos e com o tamanho de telas mais variados tamanhos e formatos temos telas arredondadas, retangulares e para piorar temos telas q nem do iPhone que colocou o falante dividindo a tela. Veja abaixo:';
+      'Um widget que insere seu child com preenchimento suficiente para evitar intrusões do sistema operacional. Por exemplo, isso irá recuar o child o suficiente para evitar a barra de status na parte superior da tela, assim como partes do dispositivo fisico. ';
   static const String SAFE_AREA_TEXT02 =
-      'E isso as vezes nos atrapalha a desenhar a tela de nosso aplicativo pois pode cortar o conteúdo do app complicando nossa vida. E para nos salvar o Flutter trouxe o SafeArea, ele usa o MediaQuery para conseguir capturar as dimensões da tela e combinar com a estrutura do nosso app, fazendo com que nenhum widget "vaze" pela tela e não apareça devido a estrutura do hardware do celular';
-  static const String SAFE_AREA_TEXT03 =
-      'Para utilizá-lo vamos pegar como exemplo o código abaixo';
-  static const String LINK_SAFE_AREA =
-      'https://www.youtube.com/watch?v=lkF0TQJO0bA&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=2&ab_channel=GoogleDevelopers';
+      'Quando um preenchimento mínimo é especificado, o maior entre o preenchimento mínimo ou o preenchimento da área de segurança será aplicado.';
   // endRegion
 
   // Region Expanded
   static const String CATALOG_EXPANDED = 'Expanded';
   static const String EXPANDED_TEXT01 =
-      'Esse widget é usado para organizar o espaço ocupado por itens em Rows, Columns e Flex. Ele faz com que esse item ocupe o espaço vago dentro do seu pai Quando a renderização acontece, primeiro é construido os childrens que não são flexiveis e depois os que são flexíveis vão ser calculados com o espaço restante. Você pode pensar como se fosse um display flex no CSS, onde essa caixa vai se expandir ocupando o todo espaço restate ou então em uma proporção indicada. Como um exemplo de uso temos o código:';
+      'Esse widget é usado para organizar o espaço ocupado por itens em Rows, Columns e Flex. Ele faz com que esse item ocupe o espaço vago dentro do seu pai Quando a renderização acontece, primeiro é construido os childrens que não são flexiveis e depois os que são flexíveis serãocalculados com o espaço restante.';
   static const String EXPANDED_TEXT02 =
+      'Você pode pensar como se fosse um display flex no CSS, onde essa caixa vai se expandir ocupando o todo espaço restate ou então em uma proporção indicada.';
+  static const String EXPANDED_TEXT03 =
       'Quando não indicamo o tamanho ocupado pelo retangulos eles se organizaram baseados nas regras de expanded. Mas e se quisermos que um seja de um tamanho diferente do outro basta usar o atributo de flex e indicar a proporção de espaço a ser ocupado. Veja:';
-  static const String LINK_EXPANDED =
-      'https://www.youtube.com/watch?v=_rnZaagadyo&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=3&ab_channel=GoogleDevelopers';
+
 // endRegion
 
 // Region
   static const String CATALOG_WRAP = 'Wrap';
   static const String WRAP_TEXT01 =
-      'Normalmente, quando você deseja fazer o layout de vários widgets horizontal ou verticalmente, pode usar uma linha ou coluna. Mas se não houver espaço suficiente, o conteúdo será cortado e você receberá o aviso de estouro amarelo e preto. Para corrigir isso, você pode usar um widget Wrap em vez de uma Linha. Veja no código abaixo:';
+      'Normalmente, quando você deseja fazer o layout de vários widgets horizontal ou verticalmente, pode usar uma linha ou coluna. Mas se não houver espaço suficiente, o conteúdo será cortado e você receberá o aviso de estouro amarelo e preto. Para corrigir isso, você pode usar um widget Wrap em vez de uma Linha.';
   static const String WRAP_TEXT02 =
-      'O padrão é quebrar horizontalmente em linhas, mas se você quiser quebrar verticalmente, você pode definir o direction, usanto direction: Axis.vertical. Você também pode definir o alinhamento e espaçamento entre os widgets. O spacing é o espaço adicionado antes do próximo widget. O runSpacing é o espaço adicionado entre linhas ou colunas. Você pode ainda fazer os widgets começar em qualquer canto e ir em qualquer direção, jogando com a direction, verticalDirectione textDirection ';
-  static const String LINK_WRAP =
-      'https://www.youtube.com/watch?v=z5iw2SeFx2M&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=4&ab_channel=GoogleDevelopers';
+      'O padrão é quebrar horizontalmente em linhas, mas se você quiser quebrar verticalmente, você pode definir o direction, usando direction: Axis.vertical. Você também pode definir o alinhamento e espaçamento entre os widgets. O spacing é o espaço adicionado antes do próximo widget. O runSpacing é o espaço adicionado entre linhas ou colunas. Você pode ainda fazer os widgets começar em qualquer canto e ir em qualquer direção, jogando com a direction, verticalDirectione textDirection ';
 
 // endRegion
 
@@ -54,11 +49,10 @@ class Strings {
   static const String CATALOG_ANIMATED_CONTAINER01 = 'Animated';
   static const String CATALOG_ANIMATED_CONTAINER02 = 'Container';
   static const String ANIMATED_CONTAINER_TEXT01 =
-      'Como o próprio nome indica, é uma espécie de contêiner que se anima cada vez que você o reconstrói. Os atributos do AnimatedContainer são iguais aos do Container, exceto por ter um atributo extra [duração], que fornece uma maneira perfeita de transição para o valor alterado.';
+      'Como o próprio nome indica, é uma espécie de contêiner que se anima cada vez que você o reconstrói. \n\nOs atributos do AnimatedContainer são iguais aos do Container, exceto por ter um atributo extra [duração], que fornece uma maneira perfeita de transição para o valor alterado.';
   static const String ANIMATED_CONTAINER_TEXT02 =
-      'Você pode construí-lo uma vez com atributos específicos, como cor, altura. E quando você o reconstrói com valores diferentes, em resposta à chamada setState . AnimatedContainer executará uma animação linear contínua para alterar o valor. e é mais do que apenas cor, altura, você pode animar as bordas, raios das bordas, imagens de fundo, sombras, gradiente e forma, etc.';
-  static const String LINK_ANIMATED_CONTAINER =
-      'https://www.youtube.com/watch?v=yI-8QHpGIP4&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=5&ab_channel=GoogleDevelopers';
+      'Você pode construí-lo uma vez com atributos específicos, como cor, altura. E quando você o reconstrói com valores diferentes, em resposta à chamada setState . \n\nAnimatedContainer executará uma animação linear contínua para alterar o valor. e é mais do que apenas cor, altura, você pode animar as bordas, raios das bordas, imagens de fundo, sombras, gradiente e forma, etc.';
+
 // endRegion
 
 // Region
@@ -69,8 +63,6 @@ class Strings {
       'Uma opacidade de 0.0significa que não há opacidade, ou seja, é totalmente transparente. Se você quiser torná-lo totalmente opaco (ou seja, sem transparência), defina a opacidade como 1.0. Qualquer coisa entre 0.0e 1.0torna o widget parcialmente transparente.';
   static const String OPACITY_TEXT03 =
       'A animação de um widget Opacity faz com que o widget (e possivelmente sua subárvore) reconstrua cada quadro, o que não é muito eficiente. Considere usar um AnimatedOpacity .';
-  static const String LINK_OPACITY =
-      'https://www.youtube.com/watch?v=9hltevOHQBw&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=6&ab_channel=GoogleDevelopers';
 
   // endRegion
 
@@ -80,7 +72,7 @@ class Strings {
   static const String CATALOG_FUTURE_BUILDER02 = 'Builder';
 
   static const String FUTURE_BUILDER_TEXT01 =
-      'As tarefas de longa duração são muito comuns em aplicativos móveis e ao criar aplicativos usando o Flutter, é comum também ter um código que funcione de maneira assíncrona. Um exemplo típico é a recuperação de dados de um servidor remoto. \nUma ação assíncrona pode ter êxito ou pode falhar e o código precisa lidar com ambos os casos.Para poder fazer o tratamento de tarefas de longa duração e usar um código que funcione de forma assíncrona o Flutter/Dart faz o tratamento das tarefas neste cenário usando um recurso chamado Future. \nO recurso Future permite que você execute o trabalho de forma assíncrona para liberar quaisquer outros segmentos/threads que não devem ser bloqueados, como o segmento/thread da interface do usuário.';
+      'As tarefas de longa duração são muito comuns em aplicativos móveis e ao criar aplicativos usando o Flutter, é comum também ter um código que funcione de maneira assíncrona. Um exemplo típico é a recuperação de dados de um servidor remoto. \n\nUma ação assíncrona pode ter êxito ou pode falhar e o código precisa lidar com ambos os casos.Para poder fazer o tratamento de tarefas de longa duração e usar um código que funcione de forma assíncrona o Flutter/Dart faz o tratamento das tarefas neste cenário usando um recurso chamado Future. \n\nO recurso Future permite que você execute o trabalho de forma assíncrona para liberar quaisquer outros segmentos/threads que não devem ser bloqueados, como o segmento/thread da interface do usuário.';
   static const String FUTURE_BUILDER_TEXT02 =
       'A classe Future está incluída no pacote dart:async e um objeto Future pode estar em dois estados: \n\n 1. pending  - Neste estado, o processamento representado por este Future ainda está em andamento e nenhum resultado está disponível. \n\n 2. completed - Neste estado, o processamento foi concluído com êxito ou com falha e o resultado está disponível. \n\nAssim podemos dividir este estado em dois sub-estados: completados com valor e completados com erro.\n\nA classe Future<T> é genérica com o argumento Type especificando o tipo de seu valor. Dado um objeto Future, podemos adicionar ouvintes de retorno de chamada a serem chamados quando o valor ou erro estiver disponível.';
   static const String FUTURE_BUILDER_TEXT03 =
@@ -91,8 +83,7 @@ class Strings {
       'Para poder tratar esses comportamentos o Flutter tem um widget stateful embutido, chamado FutureBuilder, que se constrói baseado no último instantâneo(snapshot) da interação com o Future.\nAssim, usando FutureBuilder podemos determinar o estado atual de um Future e selecionar o que mostrar enquanto está carregando, quando se torna disponível ou quando ocorre um erro.';
   static const String FUTURE_BUILDER_TEXT06 =
       'O Construtor da classe FutureBuilder pode usar até 3 parâmetros:\n\n* future :  recebe os dados após algum intervalo e representa um processamento assíncrono; \n* builder : recebe os dados do futuro e retorna o widget baseado em uma interação assíncrona; \n * initialData: é opcional, representa o snapshot inicial dos dados antes de um futuro não nulo ser concluído;';
-  static const String LINK_FUTURE_BUILDER =
-      'https://www.youtube.com/watch?v=ek8ZPdWj4Qo&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=7&ab_channel=GoogleDevelopers';
+
 // endRegion
 
 // Region
@@ -101,19 +92,17 @@ class Strings {
   static const String CATALOG_FADE_TRANSITION2 = 'Transition';
 
   static const String FADE_TRANSITION_TEXT01 =
-      'FadeTransition é um widget que anima a opacidade de um widget child. Com este widget, você pode criar uma animação de esmaecimento para mostrar ou ocultar um widget. Abaixo estão alguns exemplos de como usá-lo.';
+      'FadeTransition é um widget que anima a opacidade de um widget child.\n\nCom este widget, você pode criar uma animação de esmaecimento para mostrar ou ocultar um widget. Abaixo estão alguns exemplos de como usá-lo.';
   static const String FADE_TRANSITION_TEXT02 =
-      'Para este tipo de transição, o que você precisa passar é um Animation<double> que defina a animação a ser aplicada ao widget child. A criação de um Animation requer que você crie um AnimationController. Primeiro, você precisa estender sua classe State com TickerProviderStateMixin. Isso permite que você passe this como o vsync argumento no construtor de AnimationController.';
+      'Para este tipo de transição, o que você precisa passar é um Animation<double> que defina a animação a ser aplicada ao widget child. \n\nA criação de um Animation requer que você crie um AnimationController. Primeiro, você precisa estender sua classe State com TickerProviderStateMixin. Isso permite que você passe this como o vsync argumento no construtor de AnimationController.';
   static const String FADE_TRANSITION_TEXT03 =
-      'No controlador, você pode controlar a opacidade do widget, definindo os valores para lowerBound, upperBound, e value. lowerBound é o menor valor para a animação em que esta animação é considerada descartada, o padrão é 0,0. upperBound é o maior valor para a animação em que esta animação é considerada concluída, o padrão é 1,0. value é o valor inicial da animação, o padrão é lowerBound. Para transição de esmaecimento, um valor de 0,0 significa que a opacidade é 0%, condição em que o widget é invisível. Um valor de 1,0 significa que a opacidade é 100%. Para definir por quanto tempo a animação deve ser reproduzida, você pode passar uma Duration instância como duration argumento.';
+      'No controlador, você pode controlar a opacidade do widget, definindo os valores para lowerBound, upperBound, e value. \n\nlowerBound é o menor valor para a animação em que esta animação é considerada descartada, o padrão é 0,0. \n\nupperBound é o maior valor para a animação em que esta animação é considerada concluída, o padrão é 1,0. value é o valor inicial da animação, o padrão é lowerBound. \n\nPara transição de esmaecimento, um valor de 0,0 significa que a opacidade é 0%, condição em que o widget é invisível. Um valor de 1,0 significa que a opacidade é 100%. Para definir por quanto tempo a animação deve ser reproduzida, você pode passar uma Duration instância como duration argumento.';
   static const String FADE_TRANSITION_TEXT04 =
       'Depois disso, você pode criar a Animation instância. Outra coisa que você precisa fazer é adicionar um código para descartar o controlador dentro dele dispose()';
   static const String FADE_TRANSITION_TEXT05 = 'FadeTransition Propriedades';
   static const String FADE_TRANSITION_TEXT06 =
-      ' * Key key: A chave do widget, usada para controlar se ele deve ser substituído. \n * Animation<double> opacity *: A animação que controla a transição de fade da criança. \n * bool alwaysIncludeSemantics: Se a informação semântica dos childrens está sempre incluída. O padrão é false. \n * Widget child: O widget sob este widget na árvore onde a animação será aplicada.';
+      ' * Key key: A chave do widget, usada para controlar se ele deve ser substituído. \n\n * Animation<double> opacity *: A animação que controla a transição de fade da criança. \n\n * bool alwaysIncludeSemantics: Se a informação semântica dos childrens está sempre incluída. O padrão é false. \n\n * Widget child: O widget sob este widget na árvore onde a animação será aplicada.';
   static const String FADE_TRANSITION_TEXT07 = '';
-  static const String LINK_FADE_TRANSITION =
-      'https://www.youtube.com/watch?v=rLwWVbv3xDQ&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=8&t=3s&ab_channel=GoogleDevelopers';
 
 // endRegion
 
@@ -133,8 +122,6 @@ class Strings {
       '2. FloatingActionButton.extended FloatingActionButton.extended oferece um amplo FAB, geralmente com um ícone e um rótulo dentro dele.';
   static const String FLOATING_ACTION_BUTTON_TEXT06 =
       'Em vez de um parâmetro child, agora temos parâmetros de label e icon .';
-  static const String LINK_FLOATING_ACTION_BUTTON =
-      'https://www.youtube.com/watch?v=2uaoEDOgk_I&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=9&ab_channel=GoogleDevelopers';
 
 // endRegion
 
@@ -150,8 +137,6 @@ class Strings {
       'PageView.builder - Este construtor assume uma itemBuilderfunção e um itemCountsemelhante aListView.builder';
   static const String PAGE_VIEW_TEXT05 =
       'Como um ListView.builder, isso cria crianças sob demanda. Se o itemCountfor definido como nulo (não definido), uma lista infinita de páginas pode ser gerada. Por exemplo, o código abaixo que fornece uma lista infinita de páginas com cores alternadas de rosa e ciano.';
-  static const String LINK_PAGE_VIEW =
-      'https://www.youtube.com/watch?v=J1gE9xvph-A&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=10&ab_channel=GoogleDevelopers';
 
 // endRegion
 
@@ -165,9 +150,6 @@ class Strings {
       'Tamanho das linhas verticalmente com base em seu conteúdo. Para controlar as larguras das colunas individuais, use a propriedade columnWidths para especificar uma TableColumnWidth para cada coluna. Se columnWidths for nulo, ou houver uma entrada nula para uma determinada coluna em columnWidths , a tabela usará defaultColumnWidth em seu lugar';
   static const String TABLE_TEXT04 =
       'Por padrão, defaultColumnWidth é FlexColumnWidth . Este TableColumnWidth divide o espaço restante no eixo horizontal para determinar a largura da coluna. Se envolver uma Tabela em um ScrollView horizontal , escolha uma TableColumnWidth diferente , como FixedColumnWidth .';
-  static const String TABLE_TEXT05 = 'Veja um Exemplo:';
-  static const String LINK_TABLE =
-      'https://www.youtube.com/watch?v=_lbE0wsVZSw&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=11&ab_channel=GoogleDevelopers';
 
 // endRegion
 
@@ -175,7 +157,6 @@ class Strings {
   static const String CATALOG_SLIVER_APP_BAR = 'Sliver AppBar';
   static const String CATALOG_SLIVER_APP_BAR1 = 'Sliver';
   static const String CATALOG_SLIVER_APP_BAR2 = 'AppBar';
-
   static const String SLIVER_APP_BAR_TEXT01 =
       'Uma barra de aplicativos de material design que se integra a um CustomScrollView .';
   static const String SLIVER_APP_BAR_TEXT02 =
@@ -184,9 +165,7 @@ class Strings {
       'As barras do aplicativo Sliver são normalmente usadas como o primeiro filho de CustomScrollView , o que permite que a barra do aplicativo se integre à visualização de rolagem para que possa variar em altura de acordo com o deslocamento da rolagem ou flutuar acima do outro conteúdo na visualização de rolagem. Para obter uma barra de aplicativos de altura fixa na parte superior da tela, consulte AppBar , que é usado no slot Scaffold.appBar .';
   static const String SLIVER_APP_BAR_TEXT04 =
       'O AppBar exibe os widgets da barra de ferramentas, guia , título e ações , acima da parte inferior (se houver). Se um widget FlexibleSpace for especificado, ele será empilhado atrás da barra de ferramentas e do widget inferior.';
-  static const String SLIVER_APP_BAR_TEXT05 = 'Veja o código de exemplo:';
-  static const String LINK_SLIVER_APP_BAR =
-      'https://www.youtube.com/watch?v=R9C5KMJKluE&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=12&ab_channel=GoogleDevelopers';
+
 // endRegion
 
 // Region
@@ -194,23 +173,49 @@ class Strings {
 // endRegion
 
 // Region
-  static const String CATALOG_SLIVER_LIST = 'Sliver List';
-// endRegion
-
-// Region
-  static const String CATALOG_SLIVER_GRID = 'Sliver Grid';
+  static const String CATALOG_SLIVER = 'Slivers';
+  static const String SLIVER_TEXT01 =
+      'ListView e GridView são perfeito se você quiser ver uma lista ou uma tabela de itens separadamente. Mas, e se quisermos que a lista e tabela rolem juntas ? Ou ainda quiser criar outro efeito complexo de rolagem ? É Para isso que serve a Sliver list e Sliver Grid. ';
+  static const String SLIVER_TEXT02 =
+      'Um Sliver é uma área rolável que fica dentro de uma ScrowView personalizada. Como Slivers podem adicionar novos itens lentamente conforme aparecem, elas são uteis para rolar por varios chiildren. ';
 // endRegion
 
   // Region
   static const String CATALOG_FADE_IN_IMAGE = 'Fade in image';
+  static const String FADE_IN_IMAGE_TEXT01 =
+      'Mostrar uma imagem junto com o conteúdo do texto é sempre uma opção melhor, pois enriquece o conteúdo geral do seu aplicativo.Mas quando as imagens estão sendo baixadas de uma rede e exibidas abruptamente durante a rolagem ou navegação, isso leva a uma experiência ruim para o usuário.';
+  static const String FADE_IN_IMAGE_TEXT02 =
+      ' As imagens devem ser carregadas no lugar de algo como uma imagem de espaço reservado e, uma vez disponíveis, devem substituir a imagem de espaço reservado o mais suavemente possível. ';
+  static const String FADE_IN_IMAGE_TEXT03 =
+      ' Este widget permitirá que você coloque uma imagem de espaço reservado na visualização enquanto espera o download da imagem. Tudo o que você precisa fazer é especificar uma imagem de espaço reservado e o URL da imagem para ela e pronto. A imagem do placeholder é substituída pela imagem baixada com uma animação suave.';
   // endRegion
 
   // Region
   static const String CATALOG_STREAM_BUILDER = 'Stream Builder';
+  static const String STREAM_BUILDER_TEXT01 =
+      'Se você está planejando trabalhar em um aplicativo, provavelmente tem uma parte em seu aplicativo que depende de algum tipo de dados. O que quero dizer com isso é que há uma fonte de dados (back-end, banco de dados firebase etc.) que você deseja observar e fazer alterações em seu aplicativo em sincronia com esses dados. Ele pode ser facilmente referido como um fluxo contínuo de dados ';
+  static const String STREAM_BUILDER_TEXT02 =
+      'O Flutter possui um widget para lidar com este tipo de dados de forma assíncrona.';
+  static const String STREAM_BUILDER_TEXT03 =
+      'Este widget ouvirá os eventos que fluem do Stream e, por sua vez, se reconstruirá para cada novo evento. Você fornece a este widget um Stream. Você também pode fornecer dados iniciais, de forma que seu widget tenha algo para mostrar enquanto aguarda o próximo evento (bastante útil quando é dependente de rede).';
+  static const String STREAM_BUILDER_TEXT04 =
+      'O construtor possui uma captura instantânea que pode ser usada para controlar vários estados, como se ele possui alguns dados ou não, se o estado da conexão está ativo, concluído ou se ainda não está disponível.';
+
   // endRegion
 
   // Region
   static const String CATALOG_INHERITED_MODEL = 'Inherited model';
+  static const String INHERITED_MODEL_TEXT01 =
+      'Pode chegar um momento em que você deseje fazer alterações em um ou dois widgets, dependendo do estado de outro widget. Pense em algo como um relacionamento de widget Ancestral - Descendente, onde vários widgets de Descendente dependem das propriedades de seu widget Ancestral comum.';
+  static const String INHERITED_MODEL_TEXT02 =
+      'Agora, quando uma única propriedade do Ancestral muda, você não deseja que todos os descendentes sejam reconstruídos; em vez disso, você deseja que apenas os widgets de Descendente sejam reconstruídos e que se importam com as alterações feitas em uma propriedade particular do Widget de Ancestral. \n\nÉ aqui que entra InheritedModel.';
+  static const String INHERITED_MODEL_TEXT03 =
+      'Widgets (descendentes) em sua árvore de widgets criariam uma dependência de um InheritedModel (Ancestral). Os Descendentes especificariam de qual aspecto do Ancestral eles dependem, o que determinará se e quando eles serão reconstruídos.';
+  static const String INHERITED_MODEL_TEXT04 =
+      'Os dois métodos para se concentrar em ao trabalhar com InheritedModel são updateShouldNotify e updateShouldNotifyDependent métodos que são usados para decidir o que deve ser reconstruído.';
+  static const String INHERITED_MODEL_TEXT05 =
+      'Este widget pode parecer um pouco complicado no início, mas conforme você tenta e trabalha em um exemplo, o uso e a implementação se tornam mais claros.';
+
   // endRegion
 
   // Region
@@ -219,6 +224,13 @@ class Strings {
 
   // Region
   static const String CATALOG_HERO = 'Hero';
+  static const String HERO_TEXT01 =
+      'Animações e transições são uma ótima maneira de aprimorar a experiência do usuário do seu aplicativo. Normalmente, quando você cria uma transição de uma tela dentro de seu aplicativo para outra, a mudança nas telas é bastante abrupta. ';
+  static const String HERO_TEXT02 =
+      'Não seria ótimo mostrar essa transição entre as telas com uma animação bonita e suave? Como podemos conseguir isso? Uma opção é mostrar uma mudança com a ajuda de um widget comum em ambas as telas, seja uma imagem, um widget ou qualquer coisa para esse assunto e o flutter tem uma solução pronta para isso.';
+  static const String HERO_TEXT03 =
+      'A transição HERO é muito comum em aplicativos modernos, que permitem ao usuário saber que ele mudou de uma tela para outra. Flutter tem um widget Hero para isso, que cria automaticamente uma transição Hero entre duas rotas de navegador. Ele detecta o widget comum entre as duas rotas e anima a mudança.';
+
   // endRegion
 
   // Region
