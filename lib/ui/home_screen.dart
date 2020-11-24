@@ -42,7 +42,9 @@ class _HomeScreenState extends State<HomeScreen> {
             ButtonLogin(
               width: 300,
               text: Strings.LOGIN_GOOGLE,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, OnboardingScreenRoute);
+              },
               icon: MdiIcons.google,
             ),
             SizedBox(height: 20),

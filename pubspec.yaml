@@ -11,11 +11,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  concentric_transition: ^0.1.1
   cupertino_icons: ^1.0.0
   flutter_screenutil: ^3.2.0
   google_fonts: ^1.1.1
   http: ^0.12.2
+  introduction_screen: ^1.0.9
   material_design_icons_flutter: ^4.0.5755
+  screen_utils: ^0.0.1
   youtube_player_flutter: ^7.0.0+7
 
 dev_dependencies:
