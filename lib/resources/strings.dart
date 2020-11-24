@@ -182,6 +182,8 @@ class Strings {
 
   // Region
   static const String CATALOG_FADE_IN_IMAGE = 'Fade in image';
+  static const String CATALOG_FADE_IN_IMAGE1 = 'Fade in';
+  static const String CATALOG_FADE_IN_IMAGE2 = 'image';
   static const String FADE_IN_IMAGE_TEXT01 =
       'Mostrar uma imagem junto com o conteúdo do texto é sempre uma opção melhor, pois enriquece o conteúdo geral do seu aplicativo.Mas quando as imagens estão sendo baixadas de uma rede e exibidas abruptamente durante a rolagem ou navegação, isso leva a uma experiência ruim para o usuário.';
   static const String FADE_IN_IMAGE_TEXT02 =
@@ -219,7 +221,14 @@ class Strings {
   // endRegion
 
   // Region
-  static const String CATALOG_CLIP_REACT = 'Clip react';
+  static const String CATALOG_CLIP_RRECT = 'Clip react';
+  static const String CLIP_RRECT_TEXT01 =
+      'Um widget que prende seu filho usando um retângulo arredondado.';
+  static const String CLIP_RRECT_TEXT02 =
+      'Por padrão, ClipRRect usa seus próprios limites como retângulo base para o clipe, mas o tamanho e a localização do clipe podem ser personalizados usando um clipper personalizado ';
+  static const String CLIP_RRECT_TEXT03 =
+      'Às vezes, você pode querer cortar um widget usando um certo clipper. Em Flutter, isso pode ser feito facilmente, graças a built-in clippers tais como ClipOval, ClipRect, ClipRRect, e ClipPath. No entanto, se você deseja cortar um widget usando seu próprio clipper personalizado, também é possível criando uma classe que estende CustomClipper.';
+
   // endRegion
 
   // Region
@@ -233,105 +242,265 @@ class Strings {
 
   // endRegion
 
+  //*
   // Region
   static const String CATALOG_CUSTOM_PAINT = 'Custom Paint';
+  static const String CUSTOM_PAINT_TEXT01 =
+      'Você já desejou ser pintor? Ou talvez você apenas queira criar interfaces de usuário altamente personalizadas para seus aplicativos? De qualquer forma, o Flutter permite que você realize esses desejos.';
+  static const String CUSTOM_PAINT_TEXT02 =
+      'Para desenhar formas personalizadas, você precisa continuar iterando até obter a bela arte que deseja. Isso pode ser doloroso no desenvolvimento nativo de iOS e Android, porque toda vez que você fizer uma mudança, mesmo algo pequeno como mudar uma cor, você precisará construir e esperar algum tempo.';
+  static const String CUSTOM_PAINT_TEXT03 =
+      'Com CustomPainter , Flutter oferece acesso à pintura gráfica de baixo nível. O melhor de tudo é que pintar em Flutter é rápido e eficiente. Por exemplo, o recurso hot reload do Flutter torna mais fácil iterar rapidamente até obter exatamente a aparência desejada';
+
   // endRegion
 
   // Region
   static const String CATALOG_TOOLTIP = 'Tooltip';
+  static const String TOOLTIP_TEXT01 =
+      'As dicas de ferramentas fornecem rótulos de texto que ajudam a explicar a função de um botão ou outra ação da interface do usuário. Envolva o botão em um widget tooltip e forneça uma mensagem que será exibida quando o widget for pressionado por muito tempo.';
+  static const String TOOLTIP_TEXT02 =
+      'Muitos widgets, como IconButton , FloatingActionButton e PopupMenuButton têm uma propriedade tooltip que, quando não nula, faz com que o widget inclua uma dica de ferramenta em sua construção.';
+  static const String TOOLTIP_TEXT03 =
+      'As tooltips melhoram a acessibilidade de widgets visuais, provando uma representação textual do widget, que, por exemplo, pode ser vocalizada por um leitor de tela.';
+
   // endRegion
 
   // Region
   static const String CATALOG_FITTED_BOX = 'Fitted Box';
+  static const String FITTED_BOX_TEXT01 =
+      'FittedBox é um widget muito útil que dimensiona e posiciona seu filho dentro de si de acordo com o ajuste e o alinhamento. Considere um aplicativo, no qual você precisa obter a entrada do usuário e, em um determinado cenário, o usuário insere uma grande entrada que transborda e espalha outros widgets.';
+  static const String FITTED_BOX_TEXT02 =
+      'Como muitos dos widgets são dinâmicos, o que significa que eles podem aumentar e diminuir de tamanho, de acordo com o tamanho do widget filho. Portanto, neste caso, a interface do usuário não seria adaptativa. Para contornar esse problema, podemos usar o widget FittedBox.';
+  static const String FITTED_BOX_TEXT03 =
+      'FittedBox impede que seus widgets filhos aumentem de tamanho além de um determinado limite. Ele os redimensiona de acordo com o tamanho disponível. Por exemplo, se o texto é exibido dentro de um contêiner e o texto deve ser inserido pelo usuário. ';
+  static const String FITTED_BOX_TEXT04 =
+      'Se o usuário inserir uma grande sequência de texto, o contêiner aumentará além de seu tamanho alocado. Mas, se embrulharmos com FittedBox, então caberia o texto de acordo com o tamanho disponível';
+  static const String FITTED_BOX_TEXT05 =
+      'Para Strings grandes, ele encolheria de tamanho e, portanto, caberia no recipiente. ';
+
   // endRegion
 
   // Region
   static const String CATALOG_LAYOUT_BUILDER = 'Layout Builder';
+  static const String LAYOUT_BUILDER_TEXT01 =
+      'Constrói uma árvore de widget que pode depender do tamanho do widget pai.';
+  static const String LAYOUT_BUILDER_TEXT02 =
+      'Semelhante ao widget do Construtor, exceto que a estrutura chama a função do construtor no momento do layout e fornece as restrições do widget pai. Isso é útil quando o pai restringe o tamanho da child e não depende do tamanho intrínseco da child. O tamanho final do LayoutBuilder corresponderá ao tamanho do child.';
+  static const String LAYOUT_BUILDER_TEXT03 =
+      'A função builder é chamada nas seguintes situações: \n * A primeira vez que o widget é apresentado. \n * Quando o widget pai passa por diferentes restrições de layout. \n * Quando o widget pai atualiza este widget. \n * Quando as dependências para as quais a função de construtor assina são alteradas.';
+  static const String LAYOUT_BUILDER_TEXT04 =
+      'A função do construtor não é chamada durante o layout se o pai passar as mesmas restrições repetidamente.';
+
   // endRegion
 
   // Region
   static const String CATALOG_ABSORB_POINTER = 'Absorb Pointer';
+  static const String ABSORB_POINTER_TEXT01 =
+      'Um widget que absorve ponteiros durante o teste de clique.';
+  static const String ABSORB_POINTER_TEXT02 =
+      'Quando absorbing for true, este widget impede que sua subárvore receba eventos de ponteiro, encerrando o teste de hit em si mesmo. Ele ainda consome espaço durante o layout e pinta seu filho como de costume. ';
+  static const String ABSORB_POINTER_TEXT03 =
+      'Ele apenas evita que seus filhos sejam o destino de eventos localizados, porque retorna true de RenderBox.hitTest .';
+
   // endRegion
 
   // Region
   static const String CATALOG_TRANSFORM = 'Transform';
+  static const String TRANSFORM_TEXT01 =
+      'Um widget Transform “transforma” (ou seja, muda a forma, tamanho, posição e orientação) seu widget filho antes de pintá-lo.';
+  static const String TRANSFORM_TEXT02 =
+      'Isso é extremamente útil para formas personalizadas e muitos tipos diferentes de animações no Flutter. Isso pode ser usado para transformar qualquer widget e distorcê-lo para qualquer forma que quisermos ou movê-lo também.';
+  static const String TRANSFORM_TEXT03 =
+      'O widget Transform fornece alguns construtores para ajudar a simplificar a criação de transformações. Operações comuns, como escalonamento, rotação ou translação, são fornecidas por meio de construtores.';
+  static const String TRANSFORM_TEXT04 =
+      'Os tipos de widgets Transform são: \n * Transform (construtor padrão) \n * Transform.rotate \n * Transform.scale \n * Transform.translate';
+
   // endRegion
 
   // Region
   static const String CATALOG_BACK_DROP_FILTER = 'Back Drop Filter';
+  static const String BACK_DROP_FILTER_TEXT01 =
+      'Podemos fazer alguns bons efeitos de imagem possíveis no Flutter usando o BackdropFilter . O Widget, como tal, é realmente direto, fornece um atributo Filho e um atributo Filtro.';
+  static const String BACK_DROP_FILTER_TEXT02 =
+      'Jogar com este atributo de Filtro cria efeitos nativos realmente bons para Flutter e não requer a importação de Imagens Editadas (mesmo que possa parecer fácil).';
+
   // endRegion
 
   // Region
   static const String CATALOG_ALIGN = 'Align';
+  static const String ALIGN_TEXT01 =
+      'Um widget que alinha seu filho dentro de si e, opcionalmente, se dimensiona com base no tamanho do filho.';
+  static const String ALIGN_TEXT02 =
+      'Por exemplo, para alinhar uma caixa na parte inferior direita, você passaria a essa caixa uma restrição rígida que é maior do que o tamanho natural da criança, com um alinhamento de Alignment.bottomRight.';
+  static const String ALIGN_TEXT03 =
+      'Este widget será o maior possível se suas dimensões forem restritas e widthFactor e heightFactor forem nulos. Se uma dimensão for irrestrita e o fator de tamanho correspondente for nulo, o widget corresponderá ao tamanho de seu filho nessa dimensão. ';
+  static const String ALIGN_TEXT04 =
+      'Se um fator de tamanho não for nulo, a dimensão correspondente desse widget será o produto da dimensão da criança e do fator de tamanho. Por exemplo, se widthFactor for 2.0, a largura desse widget será sempre o dobro da largura do filho.';
+
   // endRegion
 
   // Region
   static const String CATALOG_POSITIONED = 'Positioned';
+  static const String POSITIONED_TEXT01 =
+      'Um widget que controla onde um filho de uma Pilha está posicionado.';
+  static const String POSITIONED_TEXT02 =
+      'Um widget Positioned deve ser descendente de um Stack , e o caminho do widget Positioned para sua Stack envolvente deve conter apenas StatelessWidget ou StatefulWidget (não outros tipos de widgets, como RenderObjectWidget).';
+
   // endRegion
 
   // Region
   static const String CATALOG_ANIMATED_BUILDER = 'Animated Builder';
+  static const String CATALOG_ANIMATED_BUILDER_TEXT01 = '';
+  static const String CATALOG_ANIMATED_BUILDER_TEXT02 = '';
+  static const String CATALOG_ANIMATED_BUILDER_TEXT03 = '';
+
   // endRegion
 
   // Region
   static const String CATALOG_DISMISSIBLE = 'Dismissible';
+  static const String DISMISSIBLE_TEXT01 =
+      'Um widget que pode ser descartado arrastando na direção indicada .';
+  static const String DISMISSIBLE_TEXT02 =
+      'Arrastar ou lançar esse widget em DismissDirection faz com que o filho deslize para fora de vista. Seguindo a animação do slide, se resizeDuration não for nulo, o widget Dismissible anima sua altura (ou largura, o que for perpendicular à direção de dispensar) para zero sobre resizeDuration .';
+  static const String DISMISSIBLE_TEXT03 =
+      'Para implementar essa funcionalidade no Flutter usando o widget Dismissible podemos fazer assim: \n * Criar um lista de itens; \n * Envolver cada item com um widget Dismissible; \n * Implementar o arrastar para descartar;';
+  static const String DISMISSIBLE_TEXT04 = '';
+
   // endRegion
 
   // Region
-  static const String CATALOG_SIZED_BOX_WIDGET = 'Sized Box Widget';
+  static const String CATALOG_SIZED_BOX = 'Sized Box Widget';
+  static const String SIZED_BOX_TEXT01 =
+      'Uma caixa com um tamanho especificado.';
+  static const String SIZED_BOX_TEXT02 =
+      'Se for fornecido um filho, este widget força seu filho a ter uma largura e/ou altura específicas (assumindo que os valores são permitidos pelo pai deste widget). Se a largura ou a altura forem nulas, este widget tentará se dimensionar para corresponder ao tamanho da criança nessa dimensão. Se o tamanho da criança depende do tamanho de seu pai, a altura e a largura devem ser fornecidas.';
+  static const String SIZED_BOX_TEXT03 =
+      'Se não for fornecido um filho, SizedBox tentará se dimensionar o mais próximo possível da altura e largura especificadas, dadas as restrições do pai. Se a altura ou largura for nula ou não especificada, será tratada como zero.';
+
   // endRegion
 
   // Region
   static const String CATALOG_VALUE_LISTNABLE_BUILDER =
       'Value Listanable builder';
+  static const String VALUE_LISTNABLE_BUILDER_TEXT01 = '';
+  static const String VALUE_LISTNABLE_BUILDER_TEXT02 = '';
+  static const String VALUE_LISTNABLE_BUILDER_TEXT03 = '';
+
   // endRegion
 
   // Region
   static const String CATALOG_DRAGGABLE = 'Draggable';
+  static const String DRAGGABLE_TEXT01 =
+      'Um widget que pode ser arrastado de para um DragTarget .';
+  static const String DRAGGABLE_TEXT02 =
+      'Quando um widget arrastável reconhece o início de um gesto de arrastar, ele exibe um widget de feedback que rastreia o dedo do usuário pela tela. Se o usuário levantar o dedo enquanto estiver em cima de um DragTarget , esse alvo terá a oportunidade de aceitar os dados carregados pelo draggable.';
+  static const String DRAGGABLE_TEXT03 =
+      'Em dispositivos multitoque, vários arrastamentos podem ocorrer simultaneamente porque pode haver vários ponteiros em contato com o dispositivo ao mesmo tempo. Para limitar o número de arrastamentos simultâneos, use a propriedade maxSimultaneousDrags . O padrão é permitir um número ilimitado de arrastos simultâneos.';
+  static const String DRAGGABLE_TEXT04 =
+      'Este widget exibe o filho quando zero arrasto está em andamento. Se childWhenDragging não for nulo, este widget em vez disso exibirá childWhenDragging quando um ou mais arrastos estiverem em andamento. Caso contrário, este widget sempre exibe filho .';
+  static const String DRAGGABLE_TEXT05 = '';
+
   // endRegion
 
   // Region
   static const String CATALOG_ANIMATED_LIST = 'Animated List';
+  static const String ANIMATED_LIST_TEXT01 =
+      'Um contêiner de rolagem que anima os itens quando eles são inseridos ou removidos';
+  static const String ANIMATED_LIST_TEXT02 =
+      'O AnimatedListState deste widget pode ser usado para inserir ou remover itens dinamicamente. Para referir-se ao AnimatedListState , forneça uma GlobalKey ou use o método estático de do retorno de chamada de entrada de um item.';
+  static const String ANIMATED_LIST_TEXT03 =
+      'Este widget é semelhante ao criado por ListView.builder .';
   // endRegion
 
   // Region
   static const String CATALOG_FLEXIBLE = 'Flexible';
+  static const String FLEXIBLE_TEXT01 =
+      'Um widget que controla como um filho de uma linha , coluna ou Flex se flexiona.';
+  static const String FLEXIBLE_TEXT02 =
+      'Usar um widget Flexível oferece ao filho de uma Linha , Coluna ou Flex a flexibilidade de expandir para preencher o espaço disponível no eixo principal (por exemplo, horizontalmente para uma Linha ou verticalmente para uma Coluna ), mas, ao contrário do Expanded, Flexible não exige que a criança preencha o espaço disponível.';
+  static const String FLEXIBLE_TEXT03 =
+      'Um widget flexível deve ser descendente de Row , Column ou Flex, e o caminho do widget Flexible para sua Row, Column ou Flex envolvente deve conter apenas StatelessWidgets ou StatefulWidgets (não outros tipos de widgets, como RenderObjectWidget)';
+
   // endRegion
 
   // Region
   static const String CATALOG_MEDIA_QUERY = 'Media Query';
+  static const String MEDIA_QUERY_TEXT01 =
+      'No Flutter, existe apenas uma unidade de medida: o pixel lógico. Como conseqüência, a maioria dos problemas de layout e dimensionamento são resolvidos usando a matemática, e grande parte dessa matemática esta baseada no tamanho da tela.';
+  static const String MEDIA_QUERY_TEXT02 =
+      'Por exemplo, se você quiser que um widget tenha um terço da largura da tela, como não há uma unidade de medial percentual, você vai precisar pegar o tamanho da tela via código usando o widget MediaQuery.';
+  static const String MEDIA_QUERY_TEXT03 =
+      'O MediaQuery é um widget semelhante ao Theme, no qual você pode usar o BuildContext para acessá-lo em qualquer lugar do aplicativo. Isso é feito por meio de um método da classe MediaQuery chamado of.';
+  static const String MEDIA_QUERY_TEXT04 =
+      'Nota: Os widgets MediaQuery e Theme são widgets herdados.(InheritedWidgets)';
+  static const String MEDIA_QUERY_TEXT05 =
+      'O método of consulta a árvore, localiza a classe MediaQuery mais próxima e fornece uma referência a essa instância do MediaQuery em qualquer lugar do seu aplicativo.';
+  static const String MEDIA_QUERY_TEXT06 =
+      'Desta forma a classe MediaQuery é uma ótima forma de obter informações do tamanho da tela na qual seu aplicativo esta sendo renderizado. Você acessa essas informações chamando o método estático MediaQuery.of(context).size, que retorna um objeto Size com o tamanho da largura e altura do dispositivo.';
+  static const String MEDIA_QUERY_TEXT07 =
+      'Assim, você usa o widget MediaQuery se estiver tentando obter informações específicas sobre o seu dispositivo físico ou se deseja manipular o dispositivo. Algumas das tarefas que podemos fazer usando este widget: \n * Verificar se o telefone está atualmente na orientação retrato ou paisagem; \n * Desativar animações e inverter cores por motivos de acessibilidade; \n * Verificar no dispositivo se o usuário tem seu fator de tamanho de texto aumentado; \n * Definir o preenchimento para todo o aplicativo; \n * Alterar o layout do dispositivo;';
+
   // endRegion
 
   // Region
   static const String CATALOG_SPACER = 'Spacer';
+  static const String SPACER_TEXT01 =
+      'O Space cria um espaço vazio e ajustável que pode ser usado para ajustar o espaçamento entre os widgets em um contêiner Flex , como Linha ou Coluna .';
+  static const String SPACER_TEXT02 =
+      'O widget Spacer ocupará todo o espaço disponível, portanto, configurar Flex.mainAxisAlignment em um flex container que contém um Spacer para MainAxisAlignment.spaceAround , MainAxisAlignment.spaceBetween ou MainAxisAlignment.spaceEvenly não terá nenhum efeito visível: o Spacer ocupou todos do espaço adicional, portanto, não há nenhum para redistribuir.';
+
   // endRegion
 
   // Region
   static const String CATALOG_INHERITED_WIDGET = 'Inherited widget';
+  static const String INHERITED_WIDGET_TEXT01 =
+      'Classe base para widgets que propagam informações com eficiência na árvore.';
+  static const String INHERITED_WIDGET_TEXT02 =
+      'Para obter a instância mais próxima de um tipo específico de widget herdado de um contexto de construção, use BuildContext.dependOnInheritedWidgetOfExactType .';
+  static const String INHERITED_WIDGET_TEXT03 =
+      'Widgets herdados, quando referenciados dessa forma, farão com que o consumidor reconstrua quando o próprio widget herdado mudar de estado.';
+  static const String INHERITED_WIDGET_TEXT04 = '';
+
   // endRegion
 
   // Region
   static const String CATALOG_ANIMATED_ICON = 'Animated Icon';
+  static const String ANIMATED_ICON_TEXT01 =
+      'Mostra um ícone animado em um determinado andamento da animação';
+  static const String ANIMATED_ICON_TEXT02 =
+      'Os ícones disponíveis são especificados em AnimatedIcons .';
+
   // endRegion
 
   // Region
   static const String CATALOG_ASPECT_RATIO = 'Ascpect ratio';
+  static const String ASPECT_RATIO_TEXT01 =
+      'Um widget que tenta dimensionar a criança para uma proporção de aspecto específica.';
+  static const String ASPECT_RATIO_TEXT02 =
+      'O widget tenta primeiro a maior largura permitida pelas restrições de layout. A altura do widget é determinada aplicando a proporção dada à largura, expressa como uma proporção da largura para a altura.';
+  static const String ASPECT_RATIO_TEXT03 =
+      'Por exemplo, uma proporção de largura: altura de 16: 9 teria um valor de 16,0 / 9,0. Se a largura máxima for infinita, a largura inicial será determinada aplicando a proporção da imagem à altura máxima.';
+
   // endRegion
 
   // Region
   static const String CATALOG_LIMITED_BOX = 'Limited Box';
+
   // endRegion
 
   // Region
   static const String CATALOG_PLACE_HOLDER = 'Place Holder';
+
   // endRegion
 
   // Region
   static const String CATALOG_RICH_TEXT = 'Rich Text';
+
   // endRegion
 
   // Region
   static const String CATALOG_REORDERABLE_LISTVIEW = 'Reorderable listview';
+
   // endRegion
 
   // Region

@@ -29,8 +29,7 @@ const String HomeScreenRoute = '/';
 const String OnboardingScreenRoute = '/onboardingRoute';
 const String MenuScreenRoute = '/menuRoute';
 
-// Region CataogRoute
-
+// Region CatalogRoute
 const String CatalogScreenRoute = '/catalogRoute';
 const String SafeAreaScreenRoute = '/safeAreaRoute';
 const String ExpandedScreenRoute = '/expandedRoute';

@@ -67,7 +67,7 @@ class Page2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.purple[900],
+        backgroundColor: Colors.purple[100],
         body: Padding(
           padding: EdgeInsets.all(25.0),
           child: Column(
@@ -116,7 +116,7 @@ class Page3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.pink[900],
+        backgroundColor: Colors.black,
         body: Padding(
           padding: EdgeInsets.all(25.0),
           child: Column(
@@ -169,7 +169,7 @@ class Page4 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.blue[900],
+        backgroundColor: Colors.purple[100],
         body: Padding(
           padding: EdgeInsets.all(25.0),
           child: Column(

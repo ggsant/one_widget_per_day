@@ -121,28 +121,28 @@ class _CatalogScreenState extends State<CatalogScreen> {
                 ButtonCatalog(
                   text: Strings.CATALOG_STREAM_BUILDER,
                   onPressed: () {
-                    Navigator.pushNamed(context, SliverScreenRoute);
+                    Navigator.pushNamed(context, StreamBuilderScreenRoute);
                   },
                 ),
                 SizedBox(height: 5),
                 ButtonCatalog(
                   text: Strings.CATALOG_INHERITED_MODEL,
                   onPressed: () {
-                    Navigator.pushNamed(context, SliverScreenRoute);
+                    Navigator.pushNamed(context, InheritedModelScreenRoute);
                   },
                 ),
                 SizedBox(height: 5),
                 ButtonCatalog(
-                  text: Strings.CATALOG_CLIP_REACT,
+                  text: Strings.CATALOG_CLIP_RRECT,
                   onPressed: () {
-                    Navigator.pushNamed(context, SliverScreenRoute);
+                    Navigator.pushNamed(context, ClipRRectScreenRoute);
                   },
                 ),
                 SizedBox(height: 5),
                 ButtonCatalog(
                   text: Strings.CATALOG_HERO,
                   onPressed: () {
-                    Navigator.pushNamed(context, SliverScreenRoute);
+                    Navigator.pushNamed(context, HeroScreenRoute);
                   },
                 ),
                 SizedBox(height: 5),
