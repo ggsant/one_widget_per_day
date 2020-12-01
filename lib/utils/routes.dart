@@ -1,24 +1,38 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/absrobpointer.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/align.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/animatedContainer.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/animatedbuilder.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/backdropfilter.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/cliprrect.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/custompaint.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/dismissible.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/dragrabble.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/expanded.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/fadeinimage.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/fadetransition.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/fittedbox.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/flexible.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/floatingActionButton.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/futurebuilder.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/hero.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/inheritedmodel.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/layoutbuilder.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/mediaquery.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/opacity.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/paveview.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/positionded.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/safe_area.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/sizedbox.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/sliverappbar.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/sliverlist_slivergrid.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/spacer.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/streambuilder.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/table.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/tooltip.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/transform.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/valuelistenablebuilder.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/wrap.dart';
 import 'package:one_widget_per_day/ui/catalog_screen.dart';
 import 'package:one_widget_per_day/ui/home_screen.dart';
@@ -191,9 +205,70 @@ RouteFactory routes() {
       case FittedBoxScreenRoute:
         screen = FittedBoxScreen();
         break;
-      case SliverScreenRoute:
-        screen = SliverScreen();
+      case StreamBuilderScreenRoute:
+        screen = StreamBuilderScreen();
         break;
+      case InheritedModelScreenRoute:
+        screen = InheritedModelScreen();
+        break;
+      case ClipRRectScreenRoute:
+        screen = ClipRRectScreen();
+        break;
+      case HeroScreenRoute:
+        screen = HeroScreen();
+        break;
+      case CustomPaintScreenRoute:
+        screen = CustomPaintScreen();
+        break;
+      case TooltipScreenRoute:
+        screen = TooltipScreen();
+        break;
+      case FittedBoxScreenRoute:
+        screen = FittedBoxScreen();
+        break;
+      case LayoutBuilderScreenRoute:
+        screen = LayoutBuilderScreen();
+        break;
+      case AbsorbPointerScreenRoute:
+        screen = AbsorbPointerScreen();
+        break;
+      case TransformScreenRoute:
+        screen = TransformScreen();
+        break;
+      case BackDropFilterScreenRoute:
+        screen = BackDropFilterScreen();
+        break;
+      case AlignScreenRoute:
+        screen = AlignScreen();
+        break;
+      case PositionedScreenRoute:
+        screen = PositionedScreen();
+        break;
+      case AnimatedBuilderScreenRoute:
+        screen = AnimatedBuilderScreen();
+        break;
+      case DismissibleScreenRoute:
+        screen = DismissibleScreen();
+        break;
+      case SizedBoxScreenRoute:
+        screen = SizedBoxWidgetScreen();
+        break;
+      case ValueListanableBuilderScreenRoute:
+        screen = ValueListanableBuilderScreen();
+        break;
+      case DraggableScreenRoute:
+        screen = DraggableScreen();
+        break;
+      case FlexibleScreenRoute:
+        screen = FlexibleScreen();
+        break;
+      case MediaQueryScreenRoute:
+        screen = MediaQueryScreen();
+        break;
+      case SpacerScreenRoute:
+        screen = SpacerScreen();
+        break;
+
       default:
         screen = HomeScreen();
         break;

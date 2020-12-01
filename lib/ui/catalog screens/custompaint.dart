@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:one_widget_per_day/resources/strings.dart';
-import 'package:one_widget_per_day/ui/widgets/button_catalog.dart';
 import 'package:one_widget_per_day/ui/widgets/come_back_button.dart';
-import 'package:one_widget_per_day/ui/widgets/custom_text.dart';
 import 'package:one_widget_per_day/ui/widgets/title.dart';
-import 'package:one_widget_per_day/utils/routes.dart';
 
 class CustomPaintScreen extends StatefulWidget {
   @override
@@ -30,23 +27,14 @@ class _CustomPaintScreenState extends State<CustomPaintScreen> {
                       SizedBox(width: 30),
                       TitleFont(
                         fontSize: 50,
-                        text: Strings.CATALOG_SAFE_AREA,
+                        text: Strings.CATALOG_CUSTOM_PAINT,
                       ),
                     ],
                   ),
-                  CustomText(text: Strings.SAFE_AREA_TEXT01),
-                  SizedBox(height: 30),
-                  CustomText(text: Strings.SAFE_AREA_TEXT02),
-                  SizedBox(height: 30),
-                  CustomText(text: Strings.VIDEO),
-                  SizedBox(height: 20),
-                  ButtonCatalog(
-                    text: Strings.VOLTAR,
-                    onPressed: () {
-                      Navigator.pushNamed(context, CatalogScreenRoute);
-                    },
+                  Image.asset(
+                    'assets/construcao.png',
+                    height: 400,
                   ),
-                  SizedBox(height: 20),
                 ],
               ),
             ),

@@ -43,7 +43,7 @@ class _SafeAreaScreenState extends State<SafeAreaScreen> {
                   ButtonCatalog(
                     text: Strings.VOLTAR,
                     onPressed: () {
-                      Navigator.pushNamed(context, CatalogScreenRoute);
+                      Navigator.pop(context);
                     },
                   ),
                   SizedBox(height: 20),

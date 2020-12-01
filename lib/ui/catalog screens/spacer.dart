@@ -3,12 +3,12 @@ import 'package:one_widget_per_day/resources/strings.dart';
 import 'package:one_widget_per_day/ui/widgets/come_back_button.dart';
 import 'package:one_widget_per_day/ui/widgets/title.dart';
 
-class BackDropFilterScreen extends StatefulWidget {
+class SpacerScreen extends StatefulWidget {
   @override
-  _BackDropFilterScreenState createState() => _BackDropFilterScreenState();
+  _SpacerScreenState createState() => _SpacerScreenState();
 }
 
-class _BackDropFilterScreenState extends State<BackDropFilterScreen> {
+class _SpacerScreenState extends State<SpacerScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -27,7 +27,7 @@ class _BackDropFilterScreenState extends State<BackDropFilterScreen> {
                       SizedBox(width: 30),
                       TitleFont(
                         fontSize: 50,
-                        text: Strings.CATALOG_BACK_DROP_FILTER,
+                        text: Strings.CATALOG_SPACER,
                       ),
                     ],
                   ),
