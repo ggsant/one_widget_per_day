@@ -15,6 +15,7 @@ class ButtonCatalog extends StatelessWidget {
       child: Text(text, style: TextStyle(fontSize: 20)),
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
+        primary: Color.fromRGBO(231, 72, 154, 1),
         onPrimary: Colors.white,
         minimumSize: Size(300, 45),
         elevation: 5,

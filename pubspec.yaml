@@ -1,7 +1,7 @@
 name: one_widget_per_day
 description: A new Flutter project.
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+1
 
@@ -11,14 +11,22 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  animated_bottom_navigation_bar: ^0.2.0
+  auto_size_text: ^2.1.0
+  circular_reveal_animation: ^1.1.5
   concentric_transition: ^0.1.1
   cupertino_icons: ^1.0.0
+  custom_cardgridview: ^0.0.1
   flutter_screenutil: ^3.2.0
   google_fonts: ^1.1.1
+  horizontal_card_pager: ^1.0.3
   http: ^0.12.2
   introduction_screen: ^1.0.9
   material_design_icons_flutter: ^4.0.5755
+  rxdart: ^0.24.1
   screen_utils: ^0.0.1
+  settings_ui: ^0.4.0
+  slimy_card: ^1.0.4
   youtube_player_flutter: ^7.0.0+7
 
 dev_dependencies:
@@ -26,7 +34,6 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
-
   uses-material-design: true
   assets:
     - assets/

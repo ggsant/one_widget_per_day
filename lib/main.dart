@@ -21,7 +21,7 @@ class OneWidgetPerDay extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'OneWidgetPerDay',
-      theme: ThemeData(primarySwatch: Colors.purple),
+      color: Color.fromRGBO(231, 72, 154, 1),
       home: HomeScreen(),
       onGenerateRoute: routes(),
     );

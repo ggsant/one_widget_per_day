@@ -13,7 +13,7 @@ class TitleFont extends StatelessWidget {
       text,
       style: GoogleFonts.shadowsIntoLight(
         textStyle: TextStyle(
-          color: Colors.purple[300],
+          color: Color.fromRGBO(231, 72, 154, 1),
           fontWeight: FontWeight.w700,
           fontSize: fontSize,
         ),

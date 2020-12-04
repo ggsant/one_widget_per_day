@@ -14,7 +14,7 @@ class _CatalogScreenState extends State<CatalogScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Color.fromRGBO(55, 58, 54, 1),
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Center(

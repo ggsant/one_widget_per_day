@@ -36,12 +36,14 @@ import 'package:one_widget_per_day/ui/catalog%20screens/valuelistenablebuilder.d
 import 'package:one_widget_per_day/ui/catalog%20screens/wrap.dart';
 import 'package:one_widget_per_day/ui/catalog_screen.dart';
 import 'package:one_widget_per_day/ui/home_screen.dart';
-import 'package:one_widget_per_day/ui/screens/menu.dart';
+import 'package:one_widget_per_day/ui/menu/menu.dart';
+import 'package:one_widget_per_day/ui/menu/test.dart';
 import 'package:one_widget_per_day/ui/screens/onboarding.dart';
 
 const String HomeScreenRoute = '/';
 const String OnboardingScreenRoute = '/onboardingRoute';
 const String MenuScreenRoute = '/menuRoute';
+const String TesteScreenRoute = '/menuRoute/testeRoute';
 
 // Region CatalogRoute
 const String CatalogScreenRoute = '/catalogRoute';
@@ -136,6 +138,9 @@ RouteFactory routes() {
 
     Widget screen;
     switch (settings.name) {
+      case TesteScreenRoute:
+        screen = TesteScreen();
+        break;
       case HomeScreenRoute:
         screen = HomeScreen();
         break;
@@ -143,7 +148,7 @@ RouteFactory routes() {
         screen = OnboardingScreen();
         break;
       case MenuScreenRoute:
-        screen = MenuScreen();
+        screen = MenuScreen(title: 'One Widget Per Day');
         break;
       case CatalogScreenRoute:
         screen = CatalogScreen();
