@@ -56,6 +56,7 @@ class Page1 extends StatelessWidget {
                 return Page2();
               }));
             }),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       ),
     );
   }
@@ -101,6 +102,7 @@ class Page2 extends StatelessWidget {
                 return Page3();
               }));
             }),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       ),
     );
   }
@@ -144,6 +146,7 @@ class Page3 extends StatelessWidget {
             Navigator.pushNamed(context, MenuScreenRoute);
           },
         ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       ),
     );
   }
