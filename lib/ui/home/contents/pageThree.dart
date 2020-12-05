@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:one_widget_per_day/ui/menu/book_row.dart';
+import 'package:one_widget_per_day/ui/home/contents/widgetsCards.dart';
+
+import 'apiCards.dart';
+import 'packagesCards.dart';
 
 class PageThreeMenu extends StatefulWidget {
   @override
@@ -41,17 +44,17 @@ class _PageThreeMenuState extends State<PageThreeMenu> {
                       isScrollable: true,
                       labelColor: Colors.black87,
                       tabs: <Widget>[
-                        Tab(text: 'BOOKS'),
-                        Tab(text: 'PODCAST'),
-                        Tab(text: 'WORKSHOPS'),
+                        Tab(text: 'WIDGETS'),
+                        Tab(text: 'API'),
+                        Tab(text: 'PACKAGES'),
                       ],
                     ),
                     body: Container(
                       height: 380,
                       child: TabBarView(children: [
-                        BookRow(),
-                        BookRow(),
-                        BookRow(),
+                        WidgetsCards(),
+                        ApiCards(),
+                        PackagesCards(),
                       ]),
                     )),
               ),

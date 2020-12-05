@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:one_widget_per_day/ui/menu/settings/languages_screen.dart';
+import 'package:one_widget_per_day/ui/home/settings/languages_screen.dart';
 import 'package:settings_ui/settings_ui.dart';
 
 class PageFourMenu extends StatefulWidget {

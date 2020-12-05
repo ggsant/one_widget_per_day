@@ -6,10 +6,10 @@ import 'package:circular_reveal_animation/circular_reveal_animation.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:one_widget_per_day/ui/menu/pageFour.dart';
-import 'package:one_widget_per_day/ui/menu/pageOne.dart';
-import 'package:one_widget_per_day/ui/menu/pageThree.dart';
-import 'package:one_widget_per_day/ui/menu/pageTwo.dart';
+import 'package:one_widget_per_day/ui/home/settings/pageFour.dart';
+import 'package:one_widget_per_day/ui/home/news/pageOne.dart';
+import 'package:one_widget_per_day/ui/home/contents/pageThree.dart';
+import 'package:one_widget_per_day/ui/home/likes/pageTwo.dart';
 
 class MenuScreen extends StatefulWidget {
   MenuScreen({Key key, this.title}) : super(key: key);

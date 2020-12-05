@@ -4,7 +4,6 @@ import 'package:one_widget_per_day/ui/widgets/button_catalog.dart';
 import 'package:one_widget_per_day/ui/widgets/come_back_button.dart';
 import 'package:one_widget_per_day/ui/widgets/custom_text.dart';
 import 'package:one_widget_per_day/ui/widgets/title.dart';
-import 'package:one_widget_per_day/utils/routes.dart';
 
 class SafeAreaScreen extends StatefulWidget {
   @override

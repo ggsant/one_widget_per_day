@@ -3,6 +3,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:one_widget_per_day/resources/strings.dart';
 import 'package:one_widget_per_day/ui/widgets/button_login.dart';
 import 'package:one_widget_per_day/ui/widgets/custom_text.dart';
+import 'package:one_widget_per_day/ui/widgets/image.dart';
 import 'package:one_widget_per_day/ui/widgets/title.dart';
 import 'package:one_widget_per_day/utils/routes.dart';
 
@@ -26,10 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
               fontSize: 40,
               text: Strings.TITLE_LOGIN_SCREEN,
             ),
-            Image.asset(
-              'assets/logo.png',
-              height: 300,
-            ),
+            CustomImageSignScreen(),
             ButtonLogin(
               width: 300,
               text: Strings.LOGIN_EMAIL,

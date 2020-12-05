@@ -1,12 +1,28 @@
 class Strings {
   // region Login Screen
-  static const String LOGIN_EMAIL = 'Login';
-  static const String LOGIN_GOOGLE = 'Google';
   static const String TITLE_LOGIN_SCREEN = 'One Widget Per Day';
   static const String CREANT_AN_ACCOUNT = 'Creat an account';
   static const String RECOVER_PASSWORD = 'Recover Password';
   static const String CREATED_BY = 'Created by ggsant';
+  static const String LOGIN_EMAIL = 'E-mail';
+  static const String LOGIN_GOOGLE = 'Google';
   // endRegion
+
+  // region Onboarding Screen
+  static const String TITLE_ONBOARDING_ONE = 'O aplicativo';
+  static const String TEXT_ONBOARDING_ONE =
+      'Esse aplicativo é fruto de um projeto pessoal, no qual consiste em um compilado de conceitos sobre Flutter e Dart, como APIs, widgets, packages, roadMap de carreira, entre outros.';
+  static const String TITLE_ONBOARDING_TWO = 'Flutter';
+  static const String TEXT_ONBOARDING_TWO =
+      'O Flutter é um framework construído pela Google para facilitar o desenvolvimento mobile multiplataforma (Android/iOS) que tem o Dart como principal linguagem de desenvolvimento.';
+  static const String TITLE_ONBOARDING_THREE = 'Dart';
+  static const String TEXT_ONBOARDING_THREE =
+      'Dart é a linguagem do Flutter e o ponto de partida para os seus estudos. É possível aprender Flutter e ao longo do caminho ir adquirindo familiaridade com o Dart, principalmente se você conhece JavaScript, dada a proximidade da sintaxe dessas duas linguagens. ';
+  static const String TITLE_ONBOARDING = 'Onboarding Screen';
+  // endRegion
+
+  // region home read section
+  static const String HOME_READ_SECTION = 'LER';
 
   // Region outros
   static const String VOLTAR = 'Voltar';

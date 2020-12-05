@@ -1,7 +1,10 @@
 import 'package:concentric_transition/concentric_transition.dart';
 import 'package:flutter/material.dart';
-import 'package:one_widget_per_day/ui/widgets/title.dart';
+import 'package:one_widget_per_day/resources/strings.dart';
 import 'package:one_widget_per_day/utils/routes.dart';
+
+import 'widgets/image.dart';
+import 'widgets/title.dart';
 
 class OnboardingScreen extends StatefulWidget {
   @override
@@ -11,11 +14,11 @@ class OnboardingScreen extends StatefulWidget {
 class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
-    return Page1();
+    return PageOne();
   }
 }
 
-class Page1 extends StatelessWidget {
+class PageOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -28,23 +31,18 @@ class Page1 extends StatelessWidget {
             children: [
               TitleFont(
                 fontSize: 80,
-                text: 'O aplicativo',
+                text: Strings.TITLE_ONBOARDING_ONE,
               ),
               SizedBox(height: 20),
               Padding(
                 padding: EdgeInsets.only(left: 15.0),
                 child: Text(
-                  'Esse aplicativo é fruto de um projeto pessoal, no qual consiste em um compilado de conceitos sobre Flutter e Dart, como APIs, widgets, packages, roadMap de carreira, entre outros.',
+                  Strings.TEXT_ONBOARDING_ONE,
                   style: TextStyle(color: Colors.white, fontSize: 15.0),
                 ),
               ),
               SizedBox(height: 50),
-              Image.asset(
-                'assets/logo.png',
-                width: 300,
-                height: 200,
-              ),
-              SizedBox(height: 35),
+              CustomImageOnboardingScreen(pathImage: 'assets/logo.png'),
             ],
           ),
         ),
@@ -53,16 +51,15 @@ class Page1 extends StatelessWidget {
             backgroundColor: Color.fromRGBO(231, 72, 154, 1),
             onPressed: () {
               Navigator.push(context, ConcentricPageRoute(builder: (ctx) {
-                return Page2();
+                return PageTwo();
               }));
             }),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       ),
     );
   }
 }
 
-class Page2 extends StatelessWidget {
+class PageTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -75,22 +72,17 @@ class Page2 extends StatelessWidget {
             children: [
               TitleFont(
                 fontSize: 80,
-                text: 'Flutter',
+                text: Strings.TITLE_ONBOARDING_TWO,
               ),
               Padding(
                 padding: EdgeInsets.only(left: 15.0),
                 child: Text(
-                  'O Flutter é um framework construído pela Google para facilitar o desenvolvimento mobile multiplataforma (Android/iOS) que tem o Dart como principal linguagem de desenvolvimento.',
+                  Strings.TEXT_ONBOARDING_TWO,
                   style: TextStyle(color: Colors.white, fontSize: 15.0),
                 ),
               ),
               SizedBox(height: 40),
-              Image.asset(
-                'assets/image4.png',
-                width: 300,
-                height: 200,
-              ),
-              SizedBox(height: 35),
+              CustomImageOnboardingScreen(pathImage: 'assets/image4.png'),
             ],
           ),
         ),
@@ -99,16 +91,15 @@ class Page2 extends StatelessWidget {
             backgroundColor: Color.fromRGBO(231, 72, 154, 1),
             onPressed: () {
               Navigator.push(context, ConcentricPageRoute(builder: (ctx) {
-                return Page3();
+                return PageThree();
               }));
             }),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       ),
     );
   }
 }
 
-class Page3 extends StatelessWidget {
+class PageThree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -121,20 +112,16 @@ class Page3 extends StatelessWidget {
             children: [
               TitleFont(
                 fontSize: 80,
-                text: 'Dart',
+                text: Strings.TITLE_ONBOARDING_THREE,
               ),
               Padding(
                 padding: EdgeInsets.only(left: 15.0),
                 child: Text(
-                  'Dart é a linguagem do Flutter e o ponto de partida para os seus estudos. É possível aprender Flutter e ao longo do caminho ir adquirindo familiaridade com o Dart, principalmente se você conhece JavaScript, dada a proximidade da sintaxe dessas duas linguagens. ',
+                  Strings.TEXT_ONBOARDING_THREE,
                   style: TextStyle(color: Colors.white, fontSize: 15.0),
                 ),
               ),
-              Image.asset(
-                'assets/image5.png',
-                width: 200,
-                height: 300,
-              ),
+              CustomImageOnboardingScreen(pathImage: 'assets/image5.png'),
               SizedBox(height: 35),
             ],
           ),
@@ -146,7 +133,6 @@ class Page3 extends StatelessWidget {
             Navigator.pushNamed(context, MenuScreenRoute);
           },
         ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       ),
     );
   }
