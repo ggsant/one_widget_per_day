@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:one_widget_per_day/ui/widgets/icones.dart';
 import 'package:settings_ui/settings_ui.dart';
 
 import 'languages_screen.dart';
@@ -26,7 +27,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
               SettingsTile(
                 title: 'Language',
                 subtitle: 'English',
-                leading: Icon(Icons.language),
+                leading: CustomIcons(
+                  icon: Icons.language,
+                ),
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (BuildContext context) => LanguagesScreen()));
@@ -35,7 +38,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
               SettingsTile(
                 title: 'Environment',
                 subtitle: 'Production',
-                leading: Icon(Icons.cloud_queue),
+                leading: CustomIcons(
+                  icon: Icons.cloud_queue,
+                ),
                 onTap: () => print('e'),
               ),
             ],
@@ -43,9 +48,24 @@ class _SettingsScreenState extends State<SettingsScreen> {
           SettingsSection(
             title: 'Account',
             tiles: [
-              SettingsTile(title: 'Phone number', leading: Icon(Icons.phone)),
-              SettingsTile(title: 'Email', leading: Icon(Icons.email)),
-              SettingsTile(title: 'Sign out', leading: Icon(Icons.exit_to_app)),
+              SettingsTile(
+                title: 'Phone number',
+                leading: CustomIcons(
+                  icon: Icons.phone,
+                ),
+              ),
+              SettingsTile(
+                title: 'Email',
+                leading: CustomIcons(
+                  icon: Icons.email,
+                ),
+              ),
+              SettingsTile(
+                title: 'Sign out',
+                leading: CustomIcons(
+                  icon: Icons.exit_to_app,
+                ),
+              ),
             ],
           ),
           SettingsSection(
@@ -53,7 +73,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
             tiles: [
               SettingsTile.switchTile(
                 title: 'Lock app in background',
-                leading: Icon(Icons.phonelink_lock),
+                leading: CustomIcons(
+                  icon: Icons.phonelink_lock,
+                ),
                 switchValue: lockInBackground,
                 onToggle: (bool value) {
                   setState(() {
@@ -64,19 +86,25 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
               SettingsTile.switchTile(
                   title: 'Use fingerprint',
-                  leading: Icon(Icons.fingerprint),
+                  leading: CustomIcons(
+                    icon: Icons.fingerprint,
+                  ),
                   onToggle: (bool value) {},
                   switchValue: false),
               SettingsTile.switchTile(
                 title: 'Change password',
-                leading: Icon(Icons.lock),
+                leading: CustomIcons(
+                  icon: Icons.lock,
+                ),
                 switchValue: true,
                 onToggle: (bool value) {},
               ),
               SettingsTile.switchTile(
                 title: 'Enable Notifications',
                 enabled: notificationsEnabled,
-                leading: Icon(Icons.notifications_active),
+                leading: CustomIcons(
+                  icon: Icons.notifications_active,
+                ),
                 switchValue: true,
                 onToggle: (value) {},
               ),
@@ -86,10 +114,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
             title: 'Misc',
             tiles: [
               SettingsTile(
-                  title: 'Terms of Service', leading: Icon(Icons.description)),
+                title: 'Terms of Service',
+                leading: CustomIcons(
+                  icon: Icons.description,
+                ),
+              ),
               SettingsTile(
-                  title: 'Open source licenses',
-                  leading: Icon(Icons.collections_bookmark)),
+                title: 'Open source licenses',
+                leading: CustomIcons(
+                  icon: Icons.collections_bookmark,
+                ),
+              ),
             ],
           ),
           CustomSection(

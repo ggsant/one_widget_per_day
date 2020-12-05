@@ -130,7 +130,7 @@ class PageThree extends StatelessWidget {
           child: Icon(Icons.navigate_next_outlined),
           backgroundColor: Color.fromRGBO(231, 72, 154, 1),
           onPressed: () {
-            Navigator.pushNamed(context, MenuScreenRoute);
+            Navigator.push(context, pushNewRoutes(MenuScreenRoute));
           },
         ),
       ),

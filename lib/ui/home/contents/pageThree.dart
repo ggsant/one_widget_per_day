@@ -50,7 +50,7 @@ class _PageThreeMenuState extends State<PageThreeMenu> {
                       ],
                     ),
                     body: Container(
-                      height: 380,
+                      height: 600,
                       child: TabBarView(children: [
                         WidgetsCards(),
                         ApiCards(),

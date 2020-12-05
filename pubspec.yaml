@@ -18,6 +18,9 @@ dependencies:
   cupertino_icons: ^1.0.0
   custom_cardgridview: ^0.0.1
   flutter_screenutil: ^3.2.0
+  font_awesome: ^5.10.1
+  font_awesome_flutter: ^8.10.0
+  getwidget: ^1.2.4
   google_fonts: ^1.1.1
   horizontal_card_pager: ^1.0.3
   http: ^0.12.2

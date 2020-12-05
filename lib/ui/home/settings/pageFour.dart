@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:one_widget_per_day/ui/home/settings/languages_screen.dart';
+import 'package:one_widget_per_day/ui/widgets/icones.dart';
 import 'package:settings_ui/settings_ui.dart';
 
 class PageFourMenu extends StatefulWidget {
@@ -21,9 +22,8 @@ class _PageFourMenuState extends State<PageFourMenu> {
               SettingsTile(
                 title: 'Language',
                 subtitle: 'English',
-                leading: Icon(
-                  Icons.language,
-                  color: Color.fromRGBO(231, 72, 154, 1),
+                leading: CustomIcons(
+                  icon: Icons.language,
                 ),
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
@@ -33,9 +33,8 @@ class _PageFourMenuState extends State<PageFourMenu> {
               SettingsTile(
                 title: 'Environment',
                 subtitle: 'Production',
-                leading: Icon(
-                  Icons.cloud_queue,
-                  color: Color.fromRGBO(231, 72, 154, 1),
+                leading: CustomIcons(
+                  icon: Icons.cloud_queue,
                 ),
                 onTap: () => print('e'),
               ),
@@ -49,23 +48,23 @@ class _PageFourMenuState extends State<PageFourMenu> {
             ),
             tiles: [
               SettingsTile(
-                  title: 'Phone number',
-                  leading: Icon(
-                    Icons.phone,
-                    color: Color.fromRGBO(231, 72, 154, 1),
-                  )),
+                title: 'Phone number',
+                leading: CustomIcons(
+                  icon: Icons.phone,
+                ),
+              ),
               SettingsTile(
-                  title: 'Email',
-                  leading: Icon(
-                    Icons.email,
-                    color: Color.fromRGBO(231, 72, 154, 1),
-                  )),
+                title: 'Email',
+                leading: CustomIcons(
+                  icon: Icons.email,
+                ),
+              ),
               SettingsTile(
-                  title: 'Sign out',
-                  leading: Icon(
-                    Icons.exit_to_app,
-                    color: Color.fromRGBO(231, 72, 154, 1),
-                  )),
+                title: 'Sign out',
+                leading: CustomIcons(
+                  icon: Icons.exit_to_app,
+                ),
+              ),
             ],
           ),
           SettingsSection(
@@ -77,9 +76,8 @@ class _PageFourMenuState extends State<PageFourMenu> {
             tiles: [
               SettingsTile.switchTile(
                 title: 'Lock app in background',
-                leading: Icon(
-                  Icons.phonelink_lock,
-                  color: Color.fromRGBO(231, 72, 154, 1),
+                leading: CustomIcons(
+                  icon: Icons.phonelink_lock,
                 ),
                 switchValue: lockInBackground,
                 switchActiveColor: Color.fromRGBO(231, 72, 154, 1),
@@ -93,9 +91,8 @@ class _PageFourMenuState extends State<PageFourMenu> {
               ),
               SettingsTile.switchTile(
                 title: 'Use fingerprint',
-                leading: Icon(
-                  Icons.fingerprint,
-                  color: Color.fromRGBO(231, 72, 154, 1),
+                leading: CustomIcons(
+                  icon: Icons.fingerprint,
                 ),
                 onToggle: (bool value) {},
                 switchValue: false,
@@ -104,9 +101,8 @@ class _PageFourMenuState extends State<PageFourMenu> {
               ),
               SettingsTile.switchTile(
                 title: 'Change password',
-                leading: Icon(
-                  Icons.lock,
-                  color: Color.fromRGBO(231, 72, 154, 1),
+                leading: CustomIcons(
+                  icon: Icons.lock,
                 ),
                 switchValue: true,
                 switchActiveColor: Color.fromRGBO(231, 72, 154, 1),
@@ -116,9 +112,8 @@ class _PageFourMenuState extends State<PageFourMenu> {
               SettingsTile.switchTile(
                 title: 'Enable Notifications',
                 enabled: notificationsEnabled,
-                leading: Icon(
-                  Icons.notifications_active,
-                  color: Color.fromRGBO(231, 72, 154, 1),
+                leading: CustomIcons(
+                  icon: Icons.notifications_active,
                 ),
                 switchValue: true,
                 switchActiveColor: Color.fromRGBO(231, 72, 154, 1),
@@ -134,17 +129,17 @@ class _PageFourMenuState extends State<PageFourMenu> {
             ),
             tiles: [
               SettingsTile(
-                  title: 'Terms of Service',
-                  leading: Icon(
-                    Icons.description,
-                    color: Color.fromRGBO(231, 72, 154, 1),
-                  )),
+                title: 'Terms of Service',
+                leading: CustomIcons(
+                  icon: Icons.description,
+                ),
+              ),
               SettingsTile(
-                  title: 'Open source licenses',
-                  leading: Icon(
-                    Icons.collections_bookmark,
-                    color: Color.fromRGBO(231, 72, 154, 1),
-                  )),
+                title: 'Open source licenses',
+                leading: CustomIcons(
+                  icon: Icons.collections_bookmark,
+                ),
+              ),
             ],
           ),
           CustomSection(

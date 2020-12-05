@@ -22,8 +22,8 @@ class OneWidgetPerDay extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'OneWidgetPerDay',
       color: Color.fromRGBO(231, 72, 154, 1),
-      home: HomeScreen(),
-      onGenerateRoute: routes(),
+      home: SignInScreen(),
+      // onGenerateRoute: routes(),
     );
   }
 }

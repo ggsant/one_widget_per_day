@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:one_widget_per_day/ui/widgets/icones.dart';
 import 'package:settings_ui/settings_ui.dart';
 
 class LanguagesScreen extends StatefulWidget {
@@ -55,7 +56,7 @@ class _LanguagesScreenState extends State<LanguagesScreen> {
 
   Widget trailingWidget(int index) {
     return (languageIndex == index)
-        ? Icon(Icons.check, color: Colors.blue)
+        ? CustomIcons(icon: Icons.check)
         : Icon(null);
   }
 

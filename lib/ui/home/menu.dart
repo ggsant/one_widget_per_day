@@ -10,6 +10,7 @@ import 'package:one_widget_per_day/ui/home/settings/pageFour.dart';
 import 'package:one_widget_per_day/ui/home/news/pageOne.dart';
 import 'package:one_widget_per_day/ui/home/contents/pageThree.dart';
 import 'package:one_widget_per_day/ui/home/likes/pageTwo.dart';
+import 'package:one_widget_per_day/utils/routes.dart';
 
 class MenuScreen extends StatefulWidget {
   MenuScreen({Key key, this.title}) : super(key: key);
@@ -99,6 +100,7 @@ class _MenuScreenState extends State<MenuScreen>
           onPressed: () {
             _animationController.reset();
             _animationController.forward();
+            Navigator.push(context, pushNewRoutes(HomePageRoute));
           },
         ),
       ),

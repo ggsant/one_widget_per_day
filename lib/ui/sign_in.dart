@@ -7,14 +7,14 @@ import 'package:one_widget_per_day/ui/widgets/image.dart';
 import 'package:one_widget_per_day/ui/widgets/title.dart';
 import 'package:one_widget_per_day/utils/routes.dart';
 
-class HomeScreen extends StatefulWidget {
-  HomeScreen({Key key}) : super(key: key);
+class SignInScreen extends StatefulWidget {
+  SignInScreen({Key key}) : super(key: key);
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _SignInScreenState createState() => _SignInScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
               width: 300,
               text: Strings.LOGIN_EMAIL,
               onPressed: () {
-                Navigator.pushNamed(context, CatalogScreenRoute);
+                Navigator.push(context, pushNewRoutes(OnboardingScreenRoute));
               },
               icon: Icons.email,
             ),
@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
               width: 300,
               text: Strings.LOGIN_GOOGLE,
               onPressed: () {
-                Navigator.pushNamed(context, OnboardingScreenRoute);
+                Navigator.push(context, pushNewRoutes(OnboardingScreenRoute));
               },
               icon: MdiIcons.google,
             ),
