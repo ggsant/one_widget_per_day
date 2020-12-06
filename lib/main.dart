@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:one_widget_per_day/ui/sign_in.dart';
-import 'package:one_widget_per_day/utils/routes.dart';
 
 void main() {
   runApp(OneWidgetPerDay());

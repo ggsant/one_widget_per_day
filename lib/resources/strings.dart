@@ -7,6 +7,8 @@ class Strings {
   static const String LOGIN_EMAIL = 'E-mail';
   static const String LOGIN_GOOGLE = 'Google';
   // endRegion
+  static const String VIDEO =
+      'Veja o video do canal oficial do Flutter no Youtube:';
 
   // region Onboarding Screen
   static const String TITLE_ONBOARDING_ONE = 'O aplicativo';
@@ -21,16 +23,107 @@ class Strings {
   static const String TITLE_ONBOARDING = 'Onboarding Screen';
   // endRegion
 
-  // region home read section
+  // region Menu screen
   static const String HOME_READ_SECTION = 'LER';
-
-  // Region outros
   static const String VOLTAR = 'Voltar';
+  static const String EXEMPLO = 'Veja um exemplo';
+  // Region page three - content
+  static const String CONTENT_BASE_WIDGET = 'Base Widgets';
+  static const String CONTENT_BASE_WIDGET_TEXT =
+      'Container, Row/Colums, Image, Text, Icon, RaisedButton, Flutter Logo, PlaceHolder';
+  static const String CONTENT_NAVIGATION_WIDGET = 'Navigations Widgets';
+  static const String CONTENT_BUTTONS_WIDGET = 'Buttons Widgets';
+  static const String CONTENT_INPUT_SELECTION_WIDGET =
+      'Input & selection  Widgets';
+  static const String CONTENT_DIALOG_WIDGET = 'Dialog Widgets';
+  static const String CONTENT_INFORMATION_WIDGET = 'Information Widgets';
+  static const String CONTENT_LAYOUT_SINGLE_WIDGET = 'Layout-single Widgets';
+  static const String CONTENT_LAYOUT_MULTI_WIDGET = 'Layout-muti Widgets';
+  static const String CONTENT_ASSETS_WIDGET = 'Assets Widgets';
+  static const String CONTENT_ANIMATION_WIDGET = 'Animation Widgets';
+  static const String CONTENT_INTERACTION_WIDGET = 'Interaction Widgets';
+  static const String CONTENT_PAINT_EFFECT_WIDGET = 'Painting & Effect Widgets';
+  static const String CONTENT_SCROLLING_WIDGET = 'Scrolling Base Widgets';
+  static const String CONTENT_NAVIGATION_WIDGET_TEXT =
+      'Scaffold, AppBar, BottonNavigationBar, MaterialApp, WidgetsApp, Drawer, TabBar e TabBarView';
+  static const String CONTENT_BUTTONS_WIDGET_TEXT =
+      'Raised Button, Floating Action Button, Flat Button. PopupMenuButton, ButtonBar, Icon Button, Drop Dow Button';
+  static const String CONTENT_INPUT_SELECTION_WIDGET_TEXT =
+      'Text Field, Checkbox, Radio, Switch, Slider, Date Time Pickers';
+  static const String CONTENT_DIALOG_WIDGET_TEXT =
+      'Simple Dialog, Alert Dialog, Bottom Sheet, Expansion Panel, Snack Bar';
+  static const String CONTENT_INFORMATION_WIDGET_TEXT =
+      'Image, Icon, Chip, Tooltip, DataTable, Card,	LinearProgressIndicator,	CircularProgressIndicator,	GridView';
+  static const String CONTENT_LAYOUT_SINGLE_WIDGET_TEXT =
+      'ListTile,	Stepper,	Divider,	LimitedBox, Padding,	Center,	Align,	FittedBox, Baseline,	FractionallySizedBox,	IntrinsicHeight, OverflowBox,	SizedBox,	SizedOverflowBox,	Transform, ConstrainedBox,	Offstage,	CustomSingleChildLayout,	IntrinsicWidth';
+  static const String CONTENT_LAYOUT_MULTI_WIDGET_TEXT =
+      'Row,	Column,	Stack,	IndexedStack,	Expanded GridView, Flow,	Table	Wrap, ListBody,	CustomMultiChildLayout,	LayoutBuilder,	ListView';
+  static const String CONTENT_ASSETS_WIDGET_TEXT =
+      'Text,	Image,	Form, RichText,	Icon,	FormField, DefaultTextStyle,	RawImage,	RawKeyBoardListener, AssetBundle';
+  static const String CONTENT_ANIMATION_WIDGET_TEXT =
+      'Animation,	AnimatedContaine,	AnimatedCrossFade,	Hero, FadeTransition,	PositionedTransition,	RotationTransion,	ScaleTransition, AnimatedDefaultTextStyle,	AnimatedListState, AnimatedModalBarrier,	AnimatedSize,	AnimatedWidget,	AnimatedWidgetBaseState,	DecoratedTransition, SlideTransition,	AnimatedPhysicalModel,	AnimatedPositioned,	AnimatedBuilder, SizeTransition,	AnimatedOpacity';
+  static const String CONTENT_INTERACTION_WIDGET_TEXT =
+      'Draggable,	LongPressDraggable,	GestureDetector,DragTarget,	Dismissible, AbsorbPointer,	Scrollable,	Hero,	Navigator,	IgnorePointer, Padding,	FutureBuilder,	Semantic, Theme,	StreamBuilder,	MergeSemantics,MediaQuery, ExcludeSemantics';
+  static const String CONTENT_PAINT_EFFECT_WIDGET_TEXT =
+      'Opacity	Transform	DecoratedBox	FractionalTranslation	RotatedBoxClipOval	ClipPath	ClipRect	CustomPaint';
+  static const String CONTENT_SCROLLING_WIDGET_TEXT =
+      'GridView,	ListView,	NestedScrollView SingleChildScrollView, CustomScrollview,	NotificationListener,	ScrollConfiguration,	Scrollable,	PageView	Scrollable,	RefreshIndicator';
   // endRegion
 
-  // Region Catalog
-  static const String VIDEO =
-      'Veja o video do canal oficial do Flutter no Youtube:';
+  // Region Column & Row
+  static const String CATALOG_COLUMN_ROW = 'Column & Row';
+  static const String CATALOG_ROW = 'Row';
+  static const String CATALOG_COLUMN = 'Column';
+  static const String COLUMN_ROW_TEXT01 =
+      'Uma linha é um widget usado para exibir widgets filhos de maneira horizontal. O widget de linha não rola. Se você tiver uma linha de widgets e quiser que eles possam rolar se não houver espaço suficiente, considere o uso de uma classe ListView.';
+  static const String COLUMN_ROW_TEXT02 =
+      'Uma coluna é um widget usado para exibir widgets filhos de uma maneira vertical. O widget Coluna não rola. Se você tiver uma linha de widgets e quiser que eles possam rolar se não houver espaço suficiente, considere usar um ListView.';
+  static const String COLUMN_ROW_TEXT03 =
+      'A coluna e a linha têm as mesmas propriedades.';
+  static const String COLUMN_ROW_TEXT04 =
+      'Podemos usar a propriedade crossAxisAlignment para alinhar nosso widget filho na direção desejada, por exemplo, crossAxisAlignment. start colocaria os filhos com sua borda inicial alinhada com o lado inicial do eixo cruzado.';
+  static const String COLUMN_ROW_TEXT_TITLE04 = 'CrossAxisAlignment Propery';
+  static const String COLUMN_ROW_TEXT05 =
+      'Determina a ordem de disposição dos filhos horizontalmente e como interpretar starte endna direção horizontal.';
+  static const String COLUMN_ROW_TEXT_TITLE05 = 'TextDirection Propery';
+  static const String COLUMN_ROW_TEXT06 =
+      'Determina a ordem de disposição dos filhos verticalmente e como interpretar starte endna direção vertical.';
+  static const String COLUMN_ROW_TEXT_TITLE06 = 'VerticalDirection Propery';
+  static const String COLUMN_ROW_TEXT07 =
+      'Manipula o posicionamento dos widgets filhos no eixo principal.';
+  static const String COLUMN_ROW_TEXT_TITLE07 = 'MainAxisAlignment Propery';
+  static const String COLUMN_ROW_TEXT08 =
+      'O tamanho que deve ser alocado para o widget no eixo principal.';
+  static const String COLUMN_ROW_TEXT_TITLE08 = 'MainAxisSize Propery';
+  // endRegion
+
+  // Region Text
+  static const String CATALOG_TEXT = 'Text';
+  //endRegion
+
+  // Region Icon
+  static const String CATALOG_ICONS = 'Icons';
+  //endRegion
+
+  // Region Raised Button
+  static const String CATALOG_RAISED_BUTTON = 'Raised Button';
+  //endRegion
+
+  // Region Scaffold
+  static const String CATALOG_SCAFFOLD = 'Scaffold';
+  //endRegion
+
+  // Region AppBar
+  static const String CATALOG_APP_BAR = 'AppBar';
+  //endRegion
+
+  // Region Flutter logo
+  static const String CATALOG_FLUTTER_LOGO = 'Flutter Logo';
+  //endRegion
+
+  // Region Place Holder
+  static const String CATALOG_PLACE_HOLDER = 'Place Holder';
+  //endRegion
 
   // Region Safe Area
   static const String CATALOG_SAFE_AREA = 'Safe Area';
@@ -505,11 +598,6 @@ class Strings {
   // endRegion
 
   // Region
-  static const String CATALOG_PLACE_HOLDER = 'Place Holder';
-
-  // endRegion
-
-  // Region
   static const String CATALOG_RICH_TEXT = 'Rich Text';
 
   // endRegion
@@ -565,6 +653,28 @@ class Strings {
 
   // Region
   static const String CATALOG_CONTAINER = 'Container';
+  static const String CONTAINER_TEXT =
+      'Um Container é um widget de conveniência que combina widgets comuns de pintura, posicionamento e dimensionamento.';
+  static const String CONTAINER_TEXT01 =
+      'Um Container é um widget de conveniência que combina widgets comuns de pintura, posicionamento e dimensionamento. Você pode usar o Container em qualquer widget para adicionar algumas propriedades de estilo.\n\nVamos examinar os parâmetros de um contêiner.';
+  static const String CONTAINER_TEXT02 = '''Container ({ 
+  Key key, 
+  this .alignment, 
+  this .padding, 
+  Color color, 
+  Decoration decoration, 
+  this .foregroundDecoration, 
+  double width, 
+  double height, 
+  BoxConstraints constraints, 
+  this .margin, 
+  this .transform, 
+  this .child, 
+})''';
+  static const String CONTAINER_TEXT03 = 'Vamos mergulhar em cada propriedade.';
+  static const String CONTAINER_TEXT04 =
+      '1. Cor - Você pode definir a cor que você desejar par ao seu container.\n\n2. Child - Você pode adicionar um único Widget como filho do container.\n\n3. Alinhamento - Você pode usar as classes Alignment , FractionalOffset e AlignmentDirectional para a propriedade de alinhamento no Container.\n\n4.Propriedade da restrição: Você pode usar o BoxConstraints para restringir tamanhos maximos e minimos de altura e largura do container.\n\n5. decoração - comumente usada. Contém cor, imagem, gradiente, boxShadow, borderRadius entre outros. Usamos o BoxDecoration.\n\n6. Margem: Uma margem é uma propriedade que especifica a adição de espaço ao redor do container. Fazemos isso com EdgeInsets.\n\n7. Padding: Quando adicionamos padding a um widget, apenas adicionamos espaço dentro de um widget, ao contrário da margem que adiciona espaço fora do widget.';
+
   // endRegion
 
   // Region

@@ -1,5 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/Base%20Widgets/baseWidgets.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/Base%20Widgets/column%20e%20row/column_row.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/Base%20Widgets/column%20e%20row/column_row_ex.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/Base%20Widgets/container/container.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/Base%20Widgets/container/container_exemplo.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/absrobpointer.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/align.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/animatedContainer.dart';
@@ -45,8 +50,15 @@ const String OnboardingScreenRoute = '/onboardingRoute';
 const String MenuScreenRoute = '/menuRoute';
 const String TesteScreenRoute = '/testeRoute';
 const String HomePageRoute = '/homePageRoute';
+const String BaseWidgetsRoute = '/baseWidgetsRoute';
 
 // Region CatalogRoute
+// Base Widget
+const String ContainerScreenRoute = '/containerRoute';
+const String ContainerExemploScreenRoute = '/containerExemploRoute';
+const String ColumnRowScreenRoute = '/columRowRoute';
+const String ColumnRowExemploScreenRoute = '/columRowExemploRoute';
+// endRegion
 const String CatalogScreenRoute = '/catalogRoute';
 const String SafeAreaScreenRoute = '/safeAreaRoute';
 const String ExpandedScreenRoute = '/expandedRoute';
@@ -103,7 +115,6 @@ const String AnimatedOpacityScreenRoute = '/animatedOpacityRoute';
 const String FractionallySizedBoxScreenRoute = '/fractionallySizedBoxRoute';
 const String ListViewScreenRoute = '/listviewRoute';
 const String ListTileScreenRoute = '/listTileRoute';
-const String ContainerScreenRoute = '/containerRoute';
 const String SelectableTextScreenRoute = '/selectableTextRoute';
 const String DataTableScreenRoute = '/dataTableRoute';
 const String SliderScreenRoute = '/sliverRoute';
@@ -153,6 +164,23 @@ MaterialPageRoute pushNewRoutes(String routeName) {
     case TesteScreenRoute:
       screen = (BuildContext context) => TesteScreen();
       break;
+    // Region Base Widgets
+    case BaseWidgetsRoute:
+      screen = (BuildContext context) => BaseWidgets();
+      break;
+    case ContainerScreenRoute:
+      screen = (BuildContext context) => ContainerScreen();
+      break;
+    case ContainerExemploScreenRoute:
+      screen = (BuildContext context) => ContainerExemploScreen();
+      break;
+    case ColumnRowScreenRoute:
+      screen = (BuildContext context) => ColumnRowScreen();
+      break;
+    case ColumnRowExemploScreenRoute:
+      screen = (BuildContext context) => ColumnRowExemploScreen();
+      break;
+    // endRegion
     case CatalogScreenRoute:
       screen = (BuildContext context) => CatalogScreen();
       break;
@@ -284,153 +312,5 @@ MaterialPageRoute pushNewRoutes(String routeName) {
 
   return MaterialPageRoute(builder: screen);
 }
-
-// RouteFactory routes() {
-//   return (settings) {
-//     Widget screen;
-//     switch (settings.name) {
-//       case HomeScreenRoute:
-//         screen = HomeScreen();
-//         break;
-//       case OnboardingScreenRoute:
-//         screen = OnboardingScreen();
-//         break;
-//       case MenuScreenRoute:
-//         screen = MenuScreen(title: 'One Widget Per Day');
-//         break;
-//       case TesteScreenRoute:
-//         screen = TesteScreen();
-//         break;
-//       case CatalogScreenRoute:
-//         screen = CatalogScreen();
-//         break;
-//       case SafeAreaScreenRoute:
-//         screen = SafeAreaScreen();
-//         break;
-//       case ExpandedScreenRoute:
-//         screen = ExpandedScreen();
-//         break;
-//       case WrapScreenRoute:
-//         screen = WrapScreen();
-//         break;
-//       case AnimatedContainerScreenRoute:
-//         screen = AnimatedContainerScreen();
-//         break;
-//       case OpacityScreenRoute:
-//         screen = OpacityScreen();
-//         break;
-//       case FutureBuilderScreenRoute:
-//         screen = FutureBuilderScreen();
-//         break;
-//       case FadeTransitionScreenRoute:
-//         screen = FadeTransitionScreen();
-//         break;
-//       case FloatingActionButtonScreenRoute:
-//         screen = FloatingActionButtonScreen();
-//         break;
-//       case PageviewScreenRoute:
-//         screen = PageViewScreen();
-//         break;
-//       case TableScreenRoute:
-//         screen = TableScreen();
-//         break;
-//       case SliverAppBarScreenRoute:
-//         screen = SliverAppBarScreen();
-//         break;
-//       case FadeInImageScreenRoute:
-//         screen = FadeInImageScreen();
-//         break;
-//       case StreamBuilderScreenRoute:
-//         screen = StreamBuilderScreen();
-//         break;
-//       case InheritedModelScreenRoute:
-//         screen = InheritedModelScreen();
-//         break;
-//       case ClipRRectScreenRoute:
-//         screen = ClipRRectScreen();
-//         break;
-//       case HeroScreenRoute:
-//         screen = HeroScreen();
-//         break;
-//       case CustomPaintScreenRoute:
-//         screen = CustomPaintScreen();
-//         break;
-//       case TooltipScreenRoute:
-//         screen = TooltipScreen();
-//         break;
-//       case FittedBoxScreenRoute:
-//         screen = FittedBoxScreen();
-//         break;
-//       case StreamBuilderScreenRoute:
-//         screen = StreamBuilderScreen();
-//         break;
-//       case InheritedModelScreenRoute:
-//         screen = InheritedModelScreen();
-//         break;
-//       case ClipRRectScreenRoute:
-//         screen = ClipRRectScreen();
-//         break;
-//       case HeroScreenRoute:
-//         screen = HeroScreen();
-//         break;
-//       case CustomPaintScreenRoute:
-//         screen = CustomPaintScreen();
-//         break;
-//       case TooltipScreenRoute:
-//         screen = TooltipScreen();
-//         break;
-//       case FittedBoxScreenRoute:
-//         screen = FittedBoxScreen();
-//         break;
-//       case LayoutBuilderScreenRoute:
-//         screen = LayoutBuilderScreen();
-//         break;
-//       case AbsorbPointerScreenRoute:
-//         screen = AbsorbPointerScreen();
-//         break;
-//       case TransformScreenRoute:
-//         screen = TransformScreen();
-//         break;
-//       case BackDropFilterScreenRoute:
-//         screen = BackDropFilterScreen();
-//         break;
-//       case AlignScreenRoute:
-//         screen = AlignScreen();
-//         break;
-//       case PositionedScreenRoute:
-//         screen = PositionedScreen();
-//         break;
-//       case AnimatedBuilderScreenRoute:
-//         screen = AnimatedBuilderScreen();
-//         break;
-//       case DismissibleScreenRoute:
-//         screen = DismissibleScreen();
-//         break;
-//       case SizedBoxScreenRoute:
-//         screen = SizedBoxWidgetScreen();
-//         break;
-//       case ValueListanableBuilderScreenRoute:
-//         screen = ValueListanableBuilderScreen();
-//         break;
-//       case DraggableScreenRoute:
-//         screen = DraggableScreen();
-//         break;
-//       case FlexibleScreenRoute:
-//         screen = FlexibleScreen();
-//         break;
-//       case MediaQueryScreenRoute:
-//         screen = MediaQueryScreen();
-//         break;
-//       case SpacerScreenRoute:
-//         screen = SpacerScreen();
-//         break;
-
-//       default:
-//         screen = HomeScreen();
-//         break;
-//     }
-//     return MaterialPageRoute(builder: (BuildContext context) => screen);
-//   };
-// }
 
 // TODO: Lembrar de trocar pro pop ao voltar pro catalogo
