@@ -31,7 +31,8 @@ class _WidgetsCardsState extends State<WidgetsCards> {
                   name: Strings.CONTENT_NAVIGATION_WIDGET,
                   text: Strings.CONTENT_NAVIGATION_WIDGET_TEXT,
                   onPressed: () {
-                    Navigator.push(context, pushNewRoutes(TesteScreenRoute));
+                    Navigator.push(
+                        context, pushNewRoutes(NavigationWidgetsRoute));
                   },
                 ),
                 CustomCardPageThree(
@@ -39,7 +40,7 @@ class _WidgetsCardsState extends State<WidgetsCards> {
                   name: Strings.CONTENT_BUTTONS_WIDGET,
                   text: Strings.CONTENT_BUTTONS_WIDGET_TEXT,
                   onPressed: () {
-                    Navigator.push(context, pushNewRoutes(TesteScreenRoute));
+                    Navigator.push(context, pushNewRoutes(ButtonsWidgetsRoute));
                   },
                 ),
                 CustomCardPageThree(
@@ -47,7 +48,7 @@ class _WidgetsCardsState extends State<WidgetsCards> {
                   name: Strings.CONTENT_INPUT_SELECTION_WIDGET,
                   text: Strings.CONTENT_INPUT_SELECTION_WIDGET_TEXT,
                   onPressed: () {
-                    Navigator.push(context, pushNewRoutes(TesteScreenRoute));
+                    Navigator.push(context, pushNewRoutes(InputWidgetsRoute));
                   },
                 ),
                 CustomCardPageThree(
@@ -55,7 +56,7 @@ class _WidgetsCardsState extends State<WidgetsCards> {
                   name: Strings.CONTENT_DIALOG_WIDGET,
                   text: Strings.CONTENT_DIALOG_WIDGET_TEXT,
                   onPressed: () {
-                    Navigator.push(context, pushNewRoutes(TesteScreenRoute));
+                    Navigator.push(context, pushNewRoutes(DialogWidgetsRoute));
                   },
                 ),
                 CustomCardPageThree(
@@ -63,7 +64,8 @@ class _WidgetsCardsState extends State<WidgetsCards> {
                   name: Strings.CONTENT_INFORMATION_WIDGET,
                   text: Strings.CONTENT_INFORMATION_WIDGET_TEXT,
                   onPressed: () {
-                    Navigator.push(context, pushNewRoutes(TesteScreenRoute));
+                    Navigator.push(
+                        context, pushNewRoutes(InformationWidgetsRoute));
                   },
                 ),
                 CustomCardPageThree(
@@ -71,7 +73,8 @@ class _WidgetsCardsState extends State<WidgetsCards> {
                   name: Strings.CONTENT_LAYOUT_SINGLE_WIDGET,
                   text: Strings.CONTENT_LAYOUT_SINGLE_WIDGET_TEXT,
                   onPressed: () {
-                    Navigator.push(context, pushNewRoutes(TesteScreenRoute));
+                    Navigator.push(
+                        context, pushNewRoutes(LayoutSingleWidgetsRoute));
                   },
                 ),
                 CustomCardPageThree(
@@ -79,7 +82,8 @@ class _WidgetsCardsState extends State<WidgetsCards> {
                   name: Strings.CONTENT_LAYOUT_MULTI_WIDGET,
                   text: Strings.CONTENT_LAYOUT_MULTI_WIDGET_TEXT,
                   onPressed: () {
-                    Navigator.push(context, pushNewRoutes(TesteScreenRoute));
+                    Navigator.push(
+                        context, pushNewRoutes(LayoutMultipleWidgetsRoute));
                   },
                 ),
                 CustomCardPageThree(
@@ -87,7 +91,7 @@ class _WidgetsCardsState extends State<WidgetsCards> {
                   name: Strings.CONTENT_ASSETS_WIDGET,
                   text: Strings.CONTENT_ASSETS_WIDGET_TEXT,
                   onPressed: () {
-                    Navigator.push(context, pushNewRoutes(TesteScreenRoute));
+                    Navigator.push(context, pushNewRoutes(AssetsWidgetsRoute));
                   },
                 ),
                 CustomCardPageThree(
@@ -95,7 +99,8 @@ class _WidgetsCardsState extends State<WidgetsCards> {
                   name: Strings.CONTENT_ANIMATION_WIDGET,
                   text: Strings.CONTENT_ANIMATION_WIDGET_TEXT,
                   onPressed: () {
-                    Navigator.push(context, pushNewRoutes(TesteScreenRoute));
+                    Navigator.push(
+                        context, pushNewRoutes(AnimationWidgetsRoute));
                   },
                 ),
                 CustomCardPageThree(
@@ -103,7 +108,8 @@ class _WidgetsCardsState extends State<WidgetsCards> {
                   name: Strings.CONTENT_INTERACTION_WIDGET,
                   text: Strings.CONTENT_INTERACTION_WIDGET_TEXT,
                   onPressed: () {
-                    Navigator.push(context, pushNewRoutes(TesteScreenRoute));
+                    Navigator.push(
+                        context, pushNewRoutes(InteractionWidgetsRoute));
                   },
                 ),
                 CustomCardPageThree(
@@ -111,7 +117,8 @@ class _WidgetsCardsState extends State<WidgetsCards> {
                   name: Strings.CONTENT_PAINT_EFFECT_WIDGET,
                   text: Strings.CONTENT_PAINT_EFFECT_WIDGET_TEXT,
                   onPressed: () {
-                    Navigator.push(context, pushNewRoutes(TesteScreenRoute));
+                    Navigator.push(
+                        context, pushNewRoutes(PaintingWidgetsRoute));
                   },
                 ),
                 CustomCardPageThree(
@@ -119,7 +126,8 @@ class _WidgetsCardsState extends State<WidgetsCards> {
                   name: Strings.CONTENT_SCROLLING_WIDGET,
                   text: Strings.CONTENT_SCROLLING_WIDGET_TEXT,
                   onPressed: () {
-                    Navigator.push(context, pushNewRoutes(TesteScreenRoute));
+                    Navigator.push(
+                        context, pushNewRoutes(ScrollingWidgetsRoute));
                   },
                 ),
               ],

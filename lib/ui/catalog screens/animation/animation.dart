@@ -3,12 +3,12 @@ import 'package:one_widget_per_day/resources/strings.dart';
 import 'package:one_widget_per_day/ui/widgets/customCard.dart';
 import 'package:one_widget_per_day/utils/routes.dart';
 
-class LayoutMultiple extends StatefulWidget {
+class AnimationWidget extends StatefulWidget {
   @override
-  _LayoutMultipleState createState() => _LayoutMultipleState();
+  _AnimationWidgetState createState() => _AnimationWidgetState();
 }
 
-class _LayoutMultipleState extends State<LayoutMultiple> {
+class _AnimationWidgetState extends State<AnimationWidget> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(

@@ -9,7 +9,10 @@ import 'package:one_widget_per_day/ui/catalog%20screens/absrobpointer.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/align.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/animatedContainer.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/animatedbuilder.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/animation/animation.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/assets/assets.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/backdropfilter.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/button/buttons.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/cliprrect.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/custompaint.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/dismissible.dart';
@@ -22,13 +25,21 @@ import 'package:one_widget_per_day/ui/catalog%20screens/flexible.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/floatingActionButton.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/futurebuilder.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/hero.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/information/information.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/inheritedmodel.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/input%20selection/input.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/interaction/interaction.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/layout%20multi/layout_multi.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/layout%20single/layout_single.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/layoutbuilder.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/mediaquery.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/navigation/navigation.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/opacity.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/painting%20&%20effect/painting.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/paveview.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/positionded.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/safe_area.dart';
+import 'package:one_widget_per_day/ui/catalog%20screens/scrolling/scrolling.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/sizedbox.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/sliverappbar.dart';
 import 'package:one_widget_per_day/ui/catalog%20screens/spacer.dart';
@@ -50,15 +61,64 @@ const String OnboardingScreenRoute = '/onboardingRoute';
 const String MenuScreenRoute = '/menuRoute';
 const String TesteScreenRoute = '/testeRoute';
 const String HomePageRoute = '/homePageRoute';
-const String BaseWidgetsRoute = '/baseWidgetsRoute';
 
 // Region CatalogRoute
 // Base Widget
+const String BaseWidgetsRoute = '/baseWidgetsRoute';
 const String ContainerScreenRoute = '/containerRoute';
 const String ContainerExemploScreenRoute = '/containerExemploRoute';
 const String ColumnRowScreenRoute = '/columRowRoute';
 const String ColumnRowExemploScreenRoute = '/columRowExemploRoute';
 // endRegion
+// Navigation Widget
+const String NavigationWidgetsRoute = '/navigationWidgetsRoute';
+// endRegion
+
+// Buttons widgets
+const String ButtonsWidgetsRoute = '/buttonsWidgetsRoute';
+// endRegion
+
+// Input & selection widgets
+const String InputWidgetsRoute = '/inputWidgetsRoute';
+
+// endRegion
+
+// Dialog widgets
+const String DialogWidgetsRoute = '/dialogWidgetsRoute';
+// endRegion
+
+// Information widgets
+const String InformationWidgetsRoute = '/informationWidgetsRoute';
+// endRegion
+
+// Layout single widgets
+const String LayoutSingleWidgetsRoute = '/layoutSingleWidgetsRoute';
+// endRegion
+
+// Layout multiple widgets
+const String LayoutMultipleWidgetsRoute = '/layoutMultipleWidgetsRoute';
+// endRegion
+
+//Assets widgets
+const String AssetsWidgetsRoute = '/assetsWidgetsRoute';
+// endRegion
+
+//Animation widgets
+const String AnimationWidgetsRoute = '/animationWidgetsRoute';
+// endRegion
+
+// interation widgets
+const String InteractionWidgetsRoute = '/interationWidgetsRoute';
+// endRegion
+
+// Painting e effects widgets
+const String PaintingWidgetsRoute = '/paintingWidgetsRoute';
+// endRegion
+
+// Scrolling widgets
+const String ScrollingWidgetsRoute = '/scrollingWidgetsRoute';
+// endRegion
+
 const String CatalogScreenRoute = '/catalogRoute';
 const String SafeAreaScreenRoute = '/safeAreaRoute';
 const String ExpandedScreenRoute = '/expandedRoute';
@@ -181,6 +241,43 @@ MaterialPageRoute pushNewRoutes(String routeName) {
       screen = (BuildContext context) => ColumnRowExemploScreen();
       break;
     // endRegion
+    case NavigationWidgetsRoute:
+      screen = (BuildContext context) => Navigation();
+      break;
+    case ButtonsWidgetsRoute:
+      screen = (BuildContext context) => Buttons();
+      break;
+    case InputWidgetsRoute:
+      screen = (BuildContext context) => Input();
+      break;
+    case DialogWidgetsRoute:
+      screen = (BuildContext context) => Dialog();
+      break;
+    case InformationWidgetsRoute:
+      screen = (BuildContext context) => Information();
+      break;
+    case LayoutSingleWidgetsRoute:
+      screen = (BuildContext context) => LayoutSingle();
+      break;
+    case LayoutMultipleWidgetsRoute:
+      screen = (BuildContext context) => LayoutMultiple();
+      break;
+    case AssetsWidgetsRoute:
+      screen = (BuildContext context) => Assets();
+      break;
+    case AnimationWidgetsRoute:
+      screen = (BuildContext context) => AnimationWidget();
+      break;
+    case InteractionWidgetsRoute:
+      screen = (BuildContext context) => Interaction();
+      break;
+    case PaintingWidgetsRoute:
+      screen = (BuildContext context) => Painting();
+      break;
+    case ScrollingWidgetsRoute:
+      screen = (BuildContext context) => Scrolling();
+      break;
+
     case CatalogScreenRoute:
       screen = (BuildContext context) => CatalogScreen();
       break;
